@@ -322,7 +322,7 @@ Ideas, feedback, or collaboration → open an issue or PR.
 - Interactive diagrams (E. Tufte)  
 - Section breaks with geometry  
 - Subtle looped animations: flowing digits, gradient lines, cascading “code rain” 
-- Art theory references (F. Stella, J. Albers, Miró,Hokusai, Lichtenstein) 
+- Art theory references (F. Stella, J. Albers, Miró, Hokusai, Lichtenstein) 
 - Studio Ghibli style, Oshii Ghost in the shell aesthetic (futuristic, idealistic, enlightened age of reasoning) for GitHub Pages Log. ⚠ Ignore dystopian. 
 
 ## Palette
