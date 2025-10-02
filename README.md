@@ -322,8 +322,8 @@ Ideas, feedback, or collaboration → open an issue or PR.
 - Interactive diagrams (E. Tufte)  
 - Section breaks with geometry  
 - Subtle looped animations: flowing digits, gradient lines, cascading “code rain” 
-- Art theory references (F. Stella, J. Albers, Miró, Hokusai, Lichtenstein) 
-- GitHub Pages Log, allow for some high-tech, futuristic, idealistic, enlightenment age of reason, honoring Ghost in the Shell (M. Shirow, H. Ogura, M. Oshii), Akira (Katsuhiro Otomo) and Hayao Miyazaki's works (the filmmaker, animator, and co-founder of Studio Ghibli). ⚠ Ignore dystopian. 
+- Art theory references (F. Stella, J. Albers, J. Miró, K. Hokusai, R. Lichtenstein) 
+- GitHub Pages Log, allow for some high-tech, futuristic, idealistic, enlightenment age of reason, honoring Ghost in the Shell (M. Shirow, H. Ogura, M. Oshii), Akira (K. Otomo) and H. Miyazaki's works (the filmmaker, animator, and co-founder of Studio Ghibli). ⚠ Ignore dystopian. 
 
 ## Palette
 
