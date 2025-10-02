@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 # grove-project
 Unified Grove Project with AI-enhanced Sprint Logger
 =======
@@ -260,4 +260,3 @@ grove-project/
 │   └─ beta/
 └─ README.md
 ```
->>>>>>> b8aa0d5 (Add README with initial project overview)
