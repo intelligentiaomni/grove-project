@@ -29,149 +29,149 @@ Potential breakthroughs → improved new energy materials and system → safer, 
 ## 🛠 TL;DR Modular Hub
 
 Hub Functions as Central dashboard + API → all prototypes feed into one “front door”
-```
+
 Early modules (Phase 1) → concrete ROI, tangible results
-```
+
 Intermediate modules (Phase 2) → hypothesis generation, multi-modal reasoning
-```
+
 Long-term modules (Phase 3) → meta-level prioritization, cognitive modeling
-```
+
 ---
 
 ## Traction Strategy:
 
 Early wins in Phase 1 → credibility, funding, collaborators
-```
+
 Phase 2 → differentiates lab as thought leader in AI-assisted discovery
-```
+
 Phase 3 → ambitious, high-profile research → potential breakthrough / publications / partnerships
-```
+
 ---
 Phase 0: Single Entry Point
-```
+
 Objective: Build one entry portal that funnels modular prototypes and outputs, i.e. acts as a “hub” for collaborators, data, and demonstrations.
-```
+
 Hub Features:
 
 Frontend UI dashboard (Web or Jupyter-based → index.html + scripts.js) `
-```
+
 Backend AI engine (Node.js Serverless) and GitHub sync 
-```
+
 Modular plug-ins for AI Task Processor (tasksProcessor.js), lab automation, literature analysis, discovery
-```
+
 Trajectory Visualization (Interactive examples to show real-world impact)
-```
+
 Purpose: Collect credibility, early traction, and showcase ROI to partners or funders.
-```
+
 ---
 
 Phase 1: AI for Materials Discovery (Energy Focus)
-```
+
 Why: Concrete, high-impact domain
-```
+
 Well-documented datasets and pipelines 
-```
+
 Modularity: Each prototype feeds data/insights into the central hub, showing cohesive AI capability while remaining independent.
-```
+
 Clear industrial, academic, and policy stakes
-```
+
 Small Prototype Examples: Materials Property Predictor
-```
+
 Input: Chemical formula / structure features
-```
+
 Output: Predicted conductivity, stability, or energy density
-```
+
 Model: Lightweight ML (RF, XGBoost) for 24h prototype
-```
+
 Visualization: Scatter plot of predicted vs known properties
-```
+
 ROI: Early insights for labs, startups, or energy companies
-``` 
+
 Experimental Outcome Forecaster
-```
+
 Input: Historical lab experiments, process parameters
-```
+
 Output: Probability of success / yield
-```
+
 Model: Tabular regression or Bayesian model for uncertainty
-```
+
 Visualization: Dashboard with top features influencing success
-```
+
 ROI: Labs save time and resources; funding interest
-```
+
 Literature Trend Radar (Domain-Specific)
-```
+
 Input: Scraped papers on energy materials
-```
+
 Output: Clusters of emerging research directions, novelty scoring
-```
+
 Model: NLP embeddings + clustering
-```
+
 Visualization: Interactive trend map
-```
+
 ROI: R&D managers, investors, academics get early insights
-```
+
 ---
 
 Phase 2: Scientific Hypothesis Generation
-```
+
 Why: Builds on credibility and datasets from Phase 1
-```
+
 Modularity: Hypothesis generation modules sit on top of the Phase 1 hub, leveraging existing pipelines.
-```
+
 Moves from predictions on known data → AI-assisted generation of testable hypotheses
-```
+
 Models must handle uncertainty, missing data, and interdisciplinary integration
-```
+
 Prototype Examples:
-```
+
 Hypothesis Suggestion Engine
-```
+
 Input: Materials datasets + literature embeddings
-```
+
 Output: Ranked list of plausible new experiments / materials to test
-```
+
 Visualization: Network showing connections between known data and new hypotheses
-```
+
 ROI: Labs or funders see actionable leads
-```
+
 Multi-Modal Data Integrator
-```
+
 Input: Combine lab results, simulations, literature insights
- ```
+ 
 Output: Context-aware suggestions for research directions
-```
+
 Prototype: Proof-of-concept for integrating heterogeneous scientific data
-```
+
 ---
-```
+
 Phase 3: Cognitive Science + Meta-Reasoning
-```
+
 Why: Theoretical, interdisciplinary, requires AI models that reason about reasoning
-```
+
 Modularity: These advanced modules plug into the same hub, showing continuity and the path from concrete energy-focused discoveries → generalized scientific reasoning → meta-cognitive AI insights.
-```
+
 Prioritizes which hypotheses or research directions are most promising
-```
+
 Potentially groundbreaking but builds on prior domain-specific success
-```
+
 Prototype Examples:
-```
+
 Hypothesis Prioritization Agent
-```
+
 Input: Outputs from Phase 2 + resource constraints + historical success metrics
-```
+
 Output: Ranked list of hypotheses for highest impact / feasibility
-```
+
 Visualization: “Scorecard” with explainable reasoning
-```
+
 ROI: Optimizes research investments and strategic decision-making
-```
+
 Meta-Research Modeling
-```
+
 Input: Broader scientific knowledge graph
 Output: Suggested new interdisciplinary experiments or collaborations
-```
+
 Prototype: AI agent reasoning across domains
 
 ---
