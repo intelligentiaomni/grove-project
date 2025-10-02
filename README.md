@@ -323,7 +323,7 @@ Ideas, feedback, or collaboration → open an issue or PR.
 - Section breaks with geometry  
 - Subtle looped animations: flowing digits, gradient lines, cascading “code rain” 
 - Art theory references (F. Stella, J. Albers, Miró, Hokusai, Lichtenstein) 
-- Studio Ghibli style, Oshii Ghost in the shell aesthetic (futuristic, idealistic, enlightened age of reasoning) for GitHub Pages Log. ⚠ Ignore dystopian. 
+- GitHub Pages Log, allow for some high-tech, futuristic, idealistic, enlightenment age of reason, honoring Ghost in the Shell (M. Shirow, H. Ogura, M. Oshii), Akira (Katsuhiro Otomo) and Hayao Miyazaki's works (the filmmaker, animator, and co-founder of Studio Ghibli). ⚠ Ignore dystopian. 
 
 ## Palette
 
