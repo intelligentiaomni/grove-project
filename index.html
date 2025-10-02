@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Early Christmas Gift Lottery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdf6e3;
+      color: #333;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #d6336c;
+    }
+
+    .ad-box {
+      border: 2px dashed #d6336c;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      background: #fff8f0;
+    }
+
+    .prizes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .prize {
+      border: 1px solid #d6336c;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      background: #fff;
+    }
+
+    .progress-container {
+      width: 80%;
+      margin: 0 auto 2rem;
+      background-color: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 25px;
+      width: 0;
+      background-color: #d6336c;
+      text-align: center;
+      color: white;
+      line-height: 25px;
+      transition: width 0.5s;
+    }
+
+    .donate-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #d6336c;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎄 Early Christmas Gift Lottery 🎄</h1>
+
+  <div class="ad-box">
+    <p>Donate to Grove Lab & pick up your guaranteed gift!</p>
+    <p>7–8 AM CET, Medborgarplatsen, Södermalm, Stockholm</p>
+  </div>
+
+  <div class="prizes">
+    <div class="prize">🦾 Robot (may need TLC)</div>
+    <div class="prize">🎧 Headphones</div>
+    <div class="prize">🍏 Book</div>
+    <div class="prize">🖼️ Artwork</div>
+    <div class="prize">🍀 Grove Token</div>
+    <div class="prize">🎮 Gadget</div>
+    <div class="prize">🛋️ Cozy Item</div>
+    <div class="prize">📚 Notebook</div>
+  </div>
+
+  <h2>Donation Progress</h2>
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar">0%</div>
+  </div>
+
+  <a href="https://your-donation-link.com" class="donate-btn">Donate Now</a>
+
+  <script>
+    const progressBar = document.getElementById('progressBar');
+
+    // Example: fill to 70% after 1 second
+    setTimeout(() => {
+      progressBar.style.width = '70%';
+      progressBar.textContent = '70%';
+    }, 1000);
+  </script>
+
+</body>
+</html>
+
