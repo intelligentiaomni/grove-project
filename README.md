@@ -170,6 +170,7 @@ ROI: Optimizes research investments and strategic decision-making
 Meta-Research Modeling
 
 Input: Broader scientific knowledge graph
+
 Output: Suggested new interdisciplinary experiments or collaborations
 
 Prototype: AI agent reasoning across domains
