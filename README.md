@@ -226,7 +226,7 @@ Sprint Logger Style Guide
 
 Logbook.md 
 
-> Reflection: One thing realized while building this **a clean correspondence layer, i.e. Sprint Logger for transmission (README, Logbook, GitHub Pages) is itself a prototype**. It helps automate, sieve through data, test how ideas resonate, frame experiments, and attract collaborators as well as investors, also applicable outside the lab.  
+> Reflection: One thing realized while building this, **a clean correspondence layer, i.e. Sprint Logger for transmission (README, Logbook, GitHub Pages) is itself a prototype**. It helps automate, sieve through data, test how ideas resonate, frame experiments, and attract collaborators as well as investors, also applicable outside the lab.  
 
 - **2025-09-26**: Defined core use case, refined prototypeable shape, outlined repo + comms strategy.  
 - Next update: Add first visual asset + interactive element.  
