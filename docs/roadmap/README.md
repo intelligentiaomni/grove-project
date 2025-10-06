@@ -101,21 +101,6 @@ concepts → prototypes → top-level module
 
 ---
 
-## Experimental log
-
-===============================
-🌲 GROVE EXPERIMENTAL LOGS INDEX
-===============================
-
-This folder contains early-stage experimental ideas and prototypes.
-
-| Date       | Author / Co-authors | Title / Short Description | Log File 				|
-|------------|---------------------|---------------------------|----------------------------------------|
-| 2025-10-03 | Aletheia, Lee       | grove builder             | 2025-10-03-concept-grove-builder.md    |
-| 2025-10-03 | Aletheia, Lee 	   | puzzle generator          | 2025-10-03-concept-puzzle-generator.md	|
-
----
-
 Concept examples:
 
 🌲🌲🌲 Grove Learn & Level Up Game "Should've gone to Codeforces Gym" 
@@ -147,67 +132,6 @@ A lightweight, human-centered tool that helps users:
 [x] Streamline trust 
 [x] Prove authenticity
 [x] Sync scattered identities and reconnect with contacts across networks, social channels and messaging platforms
-
----
-
-📡 Sprintlogger v2
-
-```
-| Feature / Dimension    | **v1 (Integrated)**                                                              | **v2 (Prototype)**                                                       |
-| ---------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| **Location in repo**   | `grove-sprint-logger/` (top-level)                                                | `prototypes/sprint-logger-v2/`                                            |
-| **UI**                 | Single-page form (HTML + CSS)                                                     | Multi-step wizard-like flow                                               |
-| **Inputs captured**    | Name, date, duration, goal, modules, start time, summary, reflections, next steps | Same + structured module focus + tags                                     |
-| **Output format**      | Markdown (`sessions/YYYY-MM-DD-sprint-name.md`)                                   | Markdown to `logs/YYYY-MM-DD-sprint-name.md` (consistent naming enforced) |
-| **Export / Save**      | Copy from `<pre>` block                                                           | Auto-save to repo path, optional export                                   |
-| **OpenAI integration** | GPT-4 formatting, temperature = 0.5                                               | GPT-4 + module-specific prompts (planned)                                 |
-| **Modules support**    | Free-text only                                                                    | Predefined time-boxed modules (Prompt Engine, Visualizer, etc.)           |
-| **Preview**            | Shown after submit                                                                | Live preview while typing                                                 |
-| **Collaboration**      | Single-user                                                                       | Planned team sync / async multi-user support                              |
-| **Tagging / metadata** | Manual in text                                                                    | Auto-tag: module focus, sprint type, status                               |
-| **Design**             | Basic form, minimal Inter font styling                                            | Improved UX polish, structured flow, more interactive                     |
-| **Roadmap link**       | Manual mention                                                                    | Planned: flag logs against roadmap items                                  |
-```
-
-## 🚋 Tracking Plan
-
-Outlines what metrics we’re measuring and how
-
-## Core Metrics
-
-### 1. Accuracy
-- % of correct responses to memory-based verification
-- False positives/negatives if auto-validated
-
-### 2. Latency
-- Time from link click → verification complete
-- Backend response times
-
-### 3. Engagement
-- Link open rate
-- Completion rate
-- Avg. time on page
-
-### 4. Reconnection
-- % who accept/reply after verifying
-- Optional: follow-up message sentiment
-
----
-
-## Collection Methods
-
-- Manual event logging during test demos
-- Optional future use: PostHog / Plausible
-- Lightweight surveys or in-flow feedback
-
----
-
-## Status
-
-- [ ] Metrics collection not started  
-- [ ] Simulated data added  
-- [ ] Real demo run complete  
-- [ ] Feedback synthesis in progress
 
 ---
 
