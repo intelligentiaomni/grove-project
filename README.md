@@ -38,190 +38,6 @@ Long-term modules (Phase 3) → meta-level prioritization, cognitive modeling
 
 ---
 
-## Traction Strategy:
-
-Early wins in Phase 1 → credibility, funding, collaborators
-
-Phase 2 → differentiates lab as thought leader in AI-assisted discovery
-
-Phase 3 → ambitious, high-profile research → potential breakthrough / publications / partnerships
-
----
-Phase 0: Single Entry Point
-
-Objective: Build one entry portal that funnels modular prototypes and outputs, i.e. acts as a “hub” for collaborators, data, and demonstrations.
-
-Hub Features:
-
-Frontend UI dashboard (Web or Jupyter-based → index.html + scripts.js) `
-
-Backend AI engine (Node.js Serverless) and GitHub sync 
-
-Modular plug-ins for AI Task Processor (tasksProcessor.js), lab automation, literature analysis, discovery
-
-Trajectory Visualization (Interactive examples to show real-world impact)
-
-Purpose: Collect credibility, early traction, and showcase ROI to partners or funders.
-
----
-
-Phase 1: AI for Materials Discovery (Energy Focus)
-
-Why: Concrete, high-impact domain
-
-Well-documented datasets and pipelines 
-
-Modularity: Each prototype feeds data/insights into the central hub, showing cohesive AI capability while remaining independent.
-
-Clear industrial, academic, and policy stakes
-
-Small Prototype Examples: Materials Property Predictor
-
-Input: Chemical formula / structure features
-
-Output: Predicted conductivity, stability, or energy density
-
-Model: Lightweight ML (RF, XGBoost) for 24h prototype
-
-Visualization: Scatter plot of predicted vs known properties
-
-ROI: Early insights for labs, startups, or energy companies
-
-Experimental Outcome Forecaster
-
-Input: Historical lab experiments, process parameters
-
-Output: Probability of success / yield
-
-Model: Tabular regression or Bayesian model for uncertainty
-
-Visualization: Dashboard with top features influencing success
-
-ROI: Labs save time and resources; funding interest
-
-Literature Trend Radar (Domain-Specific)
-
-Input: Scraped papers on energy materials
-
-Output: Clusters of emerging research directions, novelty scoring
-
-Model: NLP embeddings + clustering
-
-Visualization: Interactive trend map
-
-ROI: R&D managers, investors, academics get early insights
-
----
-
-Phase 2: Scientific Hypothesis Generation
-
-Why: Builds on credibility and datasets from Phase 1
-
-Modularity: Hypothesis generation modules sit on top of the Phase 1 hub, leveraging existing pipelines.
-
-Moves from predictions on known data → AI-assisted generation of testable hypotheses
-
-Models must handle uncertainty, missing data, and interdisciplinary integration
-
-Prototype Examples:
-
-Hypothesis Suggestion Engine
-
-Input: Materials datasets + literature embeddings
-
-Output: Ranked list of plausible new experiments / materials to test
-
-Visualization: Network showing connections between known data and new hypotheses
-
-ROI: Labs or funders see actionable leads
-
-Multi-Modal Data Integrator
-
-Input: Combine lab results, simulations, literature insights
- 
-Output: Context-aware suggestions for research directions
-
-Prototype: Proof-of-concept for integrating heterogeneous scientific data
-
----
-
-Phase 3: Cognitive Science + Meta-Reasoning
-
-Why: Theoretical, interdisciplinary, requires AI models that reason about reasoning
-
-Modularity: These advanced modules plug into the same hub, showing continuity and the path from concrete energy-focused discoveries → generalized scientific reasoning → meta-cognitive AI insights.
-
-Prioritizes which hypotheses or research directions are most promising
-
-Potentially groundbreaking but builds on prior domain-specific success
-
-Prototype Examples:
-
-Hypothesis Prioritization Agent
-
-Input: Outputs from Phase 2 + resource constraints + historical success metrics
-
-Output: Ranked list of hypotheses for highest impact / feasibility
-
-Visualization: “Scorecard” with explainable reasoning
-
-ROI: Optimizes research investments and strategic decision-making
-
-Meta-Research Modeling
-
-Input: Broader scientific knowledge graph
-
-Output: Suggested new interdisciplinary experiments or collaborations
-
-Prototype: AI agent reasoning across domains
-
----
-
-## About Sprint Logger
-
-Sprint Logger Features
-
-- [x] Today’s date
-- [x] Duration field updates in real-time
-- [x] Current start time (HH:MM)
-- [x] Filename in sessions/YYYY-MM-DD-sprint-name.md with versioning (-v1, -v2, etc.) →
-- [x] Ensures multiple sprints per day will never overwrite existing logs
-- [x] Markdown auto-saves locally 
-- [x] Tracking exact elapsed time automatically
-- [x] Timer info integrated with auto-save and versioned filenames
-- [x] One-click auto-start sprint timer →
-	- [x] Start Sprint Timer button (Automatically updates Duration field as time passes. Stops timer when form is submitted). 
-	- [x] Auto-stop and auto-submit after the set sprint duration
-
-- [x] Repeat Last Session button: (carries over Next Critical Step to new Goal)
-	- [x] Loads last session values
-	- [x] Updates:
-		- [x] Goal with previous “Next Critical Step”
-		- [x] Date and start time
-	- [x] Fully repeatable iterative workflow without overwriting previous files
-
-- [x] Defaults:
-	- [x] Default name/initials
-	- [x] Default duration (e.g., 60 min) 
-	- [x] Default modules focused
-	- [x] Default goal template
-	- [x] Default TL;DR summary
-	- [x] Default Reflections
-	- [x] Default Next Steps / Next Critical Step
-
-Sprint Logger Style Guide
-- **Concise & clear** → 1–2 sentences per field is enough.  
-- **Markdown-first** → all sessions are stored as `.md`.  
-- **Structure** → follow the sections: TL;DR, Reflections, Next Steps.  
-- **Async-friendly** → write so others can quickly catch up.  
-
-## File Structure
-- `grove-sprint-logger.html` → main logger interface (form + API link).  
-- `sessions/` → saved sprint logs (one per session).  
-- `modules/` → focused module logs (e.g. Time-boxed experiments). 
-
----
-
 ## Log 
 
 Logbook.md 
@@ -233,17 +49,7 @@ Logbook.md
 
 ---
 
-## Repository Status
-
-- `index.md` – landing page  
-- `research.md` – research question + context  
-- `about.md` – intent + background  
-- `simulation.md` – placeholder for interactive experiments  
-- Licenses: MIT (code), CC-BY 4.0 (content)  
-
----
-
-## Build, Test, Show
+## Build, Test, Iterate
 
 - **Prototype**: simple GPT-powered workflow → input constraints (conductivity, stability, cost) → shortlist of candidate materials.  
 - **Experiment**: behind-the-scenes testing of constraint–response loop.  
@@ -280,26 +86,6 @@ Logbook.md
 - Grove Sprint Logger  
 - Future collaborators  
 
-## Founder
-
-**Meet LS Lee**  
-Lee’s path began in mathematics, driven by the principle that scientific research is one of the most promising ways to address urgent global challenges. Mathematics — the language of the universe — serves as the foundation for this quest.
-
-The lab is cultivating an environment where mathematically minded students and scientific researchers not only excel, but also develop the intellectual operating systems and human qualities required to become the next generation of torchbearers and innovators.
-
-## Origins
-
-Lee grew up in a family circle shaped by technology and education:  
-- Father worked as a computer engineer at IBM in his youth  
-- Mother worked as a teacher  
-
-Independent reading before preschool, paired with early music training and competitive athletics, built a foundation of achievement and collaboration. These early experiences instilled both a drive for excellence and a commitment “to win” — qualities that now fuel this initiative, directed toward scientific curiosity and truth-seeking.
-
-## Gratitude
-
-> “I deeply thank the mentors who have supported me throughout this process — in person, in correspondence, and in thought. Your trust, cleverness, rigor, and inspiration are underestimated far too often. The quiet strength and compassion of my parents also continue to guide me every day.”  
-— *LS Lee*
-
 ---
 
 ## Contributing
@@ -309,112 +95,189 @@ Ideas, feedback, or collaboration → open an issue or PR.
 
 ---
 
-## 🎨 Principia Lab Style Guide 
+## 💡 Concepts
 
-## Typography
-- **Headings**: Playfair Display (serif, elegant, dramatic)  
-- **Body**: Inter (sans-serif, clean, system-like)  
-→ Balance between technical clarity and narrative elegance 
-
-## Visual Motifs
-- ASCII/binary/prime number overlays (as masks, blend modes)  
-- Shapes: sieve of erathostenes waveform, geometric shapes (e.g. G. Giusti), Möbius surfaces, platonic solids; mathematical patterns. 
-- Interactive diagrams (E. Tufte)  
-- Section breaks with geometry  
-- Subtle looped animations: flowing digits, gradient lines, cascading “code rain” 
-- Art theory references (F. Stella, J. Albers, J. Miró, K. Hokusai, R. Lichtenstein) 
-- GitHub Pages Log, allow for some high-tech, futuristic, idealistic, enlightenment age of reason, honoring Ghost in the Shell (M. Shirow, H. Ogura, M. Oshii), Akira (K. Otomo) and H. Miyazaki's works (the filmmaker, animator, and co-founder of Studio Ghibli). ⚠ Ignore dystopian. 
-
-## Palette
-
-## UI Palette (functional)
-- Background: `#FFFFFF`  
-- Text: `#000000`  
-- Highlight: `#7085FF`  
-- Borders: `#e0e0e0`  
-
-## Narrative Palette (expressive)
-- Electric neon: `#7cfcff`, `#8AFFF5` → AI tone  
-- Caution/data ping: `#FDFD96` → ephemeral signals  
-- System activity: `#39FF14` → diagnostics, motion  
-- Emotion/warmth: `#ff7a64` → human counterpoint  
-- Depth/contrast: `#180f6e` → ambient shade  
-
-⚠ Use expressive colors in illustrations, SVG overlays, or animations — not as main layout blocks.
-
-## Layout Principles
-- Grid-based, responsive  
-- Max text width ~750px for reading comfort  
-- Line height ≥ 1.6  
-- Sticky nav + scroll progress indicator  
-- Mobile breakpoint ~640px  
-
-Implementation: CSS Grid/Flexbox, layered SVG treatments, ambient animation accents.
+concepts → prototypes → top-level module
 
 ---
 
-## 24-Hour Prototype Timeline: AI-Assisted Materials Discovery
+## Experimental log
 
-Hour 0–1  | Setup Environment
-           - Python 3.10+, Jupyter Notebook / VS Code
-           - Libraries: numpy, pandas, scikit-learn, matplotlib, seaborn, plotly, streamlit
-           - Optional: initialize GitHub repo
+===============================
+🌲 GROVE EXPERIMENTAL LOGS INDEX
+===============================
 
-Hour 1–3  | Data Preparation
-           - Load public dataset (Materials Project / Kaggle) or generate synthetic data
-           - Features: atomic_number, electronegativity, atomic_radius
-           - Target: energy_density
-           - Output: clean dataframe
+This folder contains early-stage experimental ideas and prototypes.
 
-Hour 3–6  | Model Training
-           - Train Random Forest / XGBoost
-           - Split train/test
-           - Compute error metric (MSE)
-           - Output: trained model, performance score
+| Date       | Author / Co-authors | Title / Short Description | Log File 				|
+|------------|---------------------|---------------------------|----------------------------------------|
+| 2025-10-03 | Aletheia, Lee       | grove builder             | 2025-10-03-concept-grove-builder.md    |
+| 2025-10-03 | Aletheia, Lee 	   | puzzle generator          | 2025-10-03-concept-puzzle-generator.md	|
 
-Hour 6–9  | Visualization
-           - Scatter plot: predicted vs actual
-           - Feature importance chart
-           - Output: explainable insights
+---
 
-Hour 9–12 | Interactive Input Demo (Optional)
-           - Streamlit or Jupyter widget
-           - User can input descriptors, see predicted energy density
-           - Output: live demo for collaborators
+Concept examples:
 
-Hour 12–15| Modular Hub Integration
-           - Separate modules: data, model, visualization
-           - Prepare for integration with other prototypes (literature radar, lab outcome forecaster)
-           - Output: modular code ready for hub
+🌲🌲🌲 Grove Learn & Level Up Game "Should've gone to Codeforces Gym" 
 
-Hour 15–24| Presentation & Narrative Prep
-           - Slides: Problem → Prototype → Insights → ROI
-           - Include screenshots of plots & demo
-           - Optional live notebook demo
-           - Output: sharable prototype presentation
+A gamified coding and problem-solving platform that is visually memorable and give players “missions” across iconic locations in tech and innovation hub Bay Area to inspire scientists and builders 
 
-Deliverables by 24h:
+Goal: Progress from 0 to basic level, level up to gain points through interactive sprints to reach scoreboard momentum, leaderboard domination, and become part of a cluster of builders. Track XP, level up further, unlock mini-projects, and build skills step-by-step toward cooldown vibe coder awesomeness and opportunity readiness.
 
-- Predictive model for 50–100 materials
-- Scatter plot & feature importance visualizations
-- Interactive input demo (Streamlit)
-- Modular code structure
-- Slide deck / narrative linking prototype → ROI → next phases
+Target group: 
+Edu Ed game (Education Edition) for early learners 
 
-## Project Structure
+- Solve hundreds of past sprints
+- Study problems with deceptive statements
+- Rapid triage skills
+- Clean implementation
+
+---
+
+🤝 Reconnect Authenticator — Automates verification without awkward back-and-forth
+
+Simple Connection Workflow →
+
+- One-click approval or rejection of connection requests
+- Clear, friendly instructions for recipients on what to do next
+
+Concept Overview
+A lightweight, human-centered tool that helps users:
+
+[x] Streamline trust 
+[x] Prove authenticity
+[x] Sync scattered identities and reconnect with contacts across networks, social channels and messaging platforms
+
+---
+
+📡 Sprintlogger v2
+
+```
+| Feature / Dimension    | **v1 (Integrated)**                                                              | **v2 (Prototype)**                                                       |
+| ---------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **Location in repo**   | `grove-sprint-logger/` (top-level)                                                | `prototypes/sprint-logger-v2/`                                            |
+| **UI**                 | Single-page form (HTML + CSS)                                                     | Multi-step wizard-like flow                                               |
+| **Inputs captured**    | Name, date, duration, goal, modules, start time, summary, reflections, next steps | Same + structured module focus + tags                                     |
+| **Output format**      | Markdown (`sessions/YYYY-MM-DD-sprint-name.md`)                                   | Markdown to `logs/YYYY-MM-DD-sprint-name.md` (consistent naming enforced) |
+| **Export / Save**      | Copy from `<pre>` block                                                           | Auto-save to repo path, optional export                                   |
+| **OpenAI integration** | GPT-4 formatting, temperature = 0.5                                               | GPT-4 + module-specific prompts (planned)                                 |
+| **Modules support**    | Free-text only                                                                    | Predefined time-boxed modules (Prompt Engine, Visualizer, etc.)           |
+| **Preview**            | Shown after submit                                                                | Live preview while typing                                                 |
+| **Collaboration**      | Single-user                                                                       | Planned team sync / async multi-user support                              |
+| **Tagging / metadata** | Manual in text                                                                    | Auto-tag: module focus, sprint type, status                               |
+| **Design**             | Basic form, minimal Inter font styling                                            | Improved UX polish, structured flow, more interactive                     |
+| **Roadmap link**       | Manual mention                                                                    | Planned: flag logs against roadmap items                                  |
+```
+
+## 🚋 Tracking Plan
+
+Outlines what metrics we’re measuring and how
+
+## Core Metrics
+
+### 1. Accuracy
+- % of correct responses to memory-based verification
+- False positives/negatives if auto-validated
+
+### 2. Latency
+- Time from link click → verification complete
+- Backend response times
+
+### 3. Engagement
+- Link open rate
+- Completion rate
+- Avg. time on page
+
+### 4. Reconnection
+- % who accept/reply after verifying
+- Optional: follow-up message sentiment
+
+---
+
+## Collection Methods
+
+- Manual event logging during test demos
+- Optional future use: PostHog / Plausible
+- Lightweight surveys or in-flow feedback
+
+---
+
+## Status
+
+- [ ] Metrics collection not started  
+- [ ] Simulated data added  
+- [ ] Real demo run complete  
+- [ ] Feedback synthesis in progress
+
+---
+
+## Repository Structure
 ```
 grove-project/
-├─ grove-prototype/         # Existing AI materials discovery prototype
-├─ early-christmas-lottery/ # Lottery prototype
-├─ grove-sprint-logger/     # Interactive sprint logger (frontend)
-├─ backend-ai/              # Serverless AI backend for tick-only sync
+├─ index.md               			# Homepage content
+├─ research.md            			# Research question, context
+├─ about.md               			# About Lab			
+├─ simulations.md         			# Placeholder for interactive work
+├─ README.md              			# Public explanation of the project
+├─ LICENSE.txt            			# MIT License (code)
+├─ src/                           		# Production modules
+│   ├─ prompt_engine/
+│   ├─ visualizer/
+│   └─ utils/
+├─ prototypes/					# Experimental module (status, tags, date)
+│	├─ grove-builder/
+│       │   ├─ README.md               
+│       │   ├─ index.html
+│       │   ├─ hud.js
+│       │   └─ map-ui.js
+│       ├─ grove-prototype      		
+│       │   └─ README.md
+│       ├─ early-christmas-lottery
+│       └─ sprint-logger-v2
+│           └─ README.md
+├─ grove-sprint-logger/     			# Integrated module 
+│    └─ log.md
+├─ backend-ai/              			# Serverless backend 
 │   ├─ index.js
 │   ├─ tasksProcessor.js
-│   └─ utils.js
-├─ shared/                  # Shared assets (Chart.js, CSS, JS utils)
-├─ sessions/                # Full markdown sprint logs
-├─ tasks-completed/         # Tick-only updates per team
+│   └─ utils.js│    
+├─ logs/ 
+│   ├─ 2025-10-03-sprint-aletheia.md 		# Async sprint logs (tracking)        			
+│   └─ 2025-10-03-sprint-lee.md    
+├─ concepts/
+│    ├─						# Sandboxed early-stage ideas, raw notes, future prototype seeds, drafts and placeholders
+│    ├─ grove-builder-game
+│    ├─ reconnect-authenticator 
+│    └─ experimental-log.md
+├─ tasks-completed/         			# Tick-only progress
 │   ├─ alpha/
 │   └─ beta/
-└─ README.md
+├─ _config.yml            			# Jekyll config 
+├─ _layouts/
+│   └─ default.html        			# Clean site structure
+├─ _includes/
+│    └─ footer.html 
+├─ assets/					# Visuals, GIFs, screen shots, sketches (Chart.js, JS utils)
+│   ├─ voice samples                     		
+│   ├─ idea-thumbnails/
+│   │   ├─ grove-builder.png
+│   │   └─ puzzle-generator.gif
+│   ├─ demos/
+│   │	├─ sprint-logger-demo.gif
+│   │   ├─ grove-builder-demo.gif
+│   │   └─ reconnect-demo.mp4
+│   ├─ diagrams 
+│   └─ css/
+│       └─ style.css      			# Optional custom styling
+├─ scripts/                     		# Helpers
+│     └─ generate-log.js        		# Auto-create logs with labels
+│
+└─ docs
+    ├─ tracking-plan.md
+    ├─ roadmap.md				[Roadmap](docs/roadmap/roadmap.md) # Prioritization and dependencies
+    ├─ styleguides/
+    │   ├─ ui-branding.md              		# UI, branding guide
+    │   └─ assets     				# logos, icons, favicons	  					
+    └─ archive 
+    	 
 ```
