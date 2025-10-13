@@ -1,0 +1,26 @@
+<!-- badges: public-safe -->
+[![Status: Prototype](https://img.shields.io/badge/status-prototype-yellowgreen)](./)
+[![Version](https://img.shields.io/badge/version-0.1.0-alpha-blueviolet)](./)
+[![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/principia-lab/grove-prototype)](https://github.com/principia-lab/grove-prototype/issues)
+[![Language: Python](https://img.shields.io/badge/language-Python-3572A5.svg)](./)
+@"
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="28">
+  <rect width="110" height="28" rx="5" fill="#4CBB17"/>
+  <text x="55" y="18" font-size="13" font-family="Verdana" fill="#fff" text-anchor="middle">🌱 Grove AI</text>
+</svg>
+"@ | Out-File "badge-ai.svg" -Encoding utf8
+
+@"
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="28">
+  <rect width="110" height="28" rx="5" fill="#0078D7"/>
+  <text x="55" y="18" font-size="13" font-family="Verdana" fill="#fff" text-anchor="middle">🧠 Prototype</text>
+</svg>
+"@ | Out-File "badge-prototype.svg" -Encoding utf8
+
+@"
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="28">
+  <rect width="110" height="28" rx="5" fill="#FFB000"/>
+  <text x="55" y="18" font-size="13" font-family="Verdana" fill="#fff" text-anchor="middle">🚀 Beta</text>
+</svg>
+"@ | Out-File "badge-beta.svg" -Encoding utf8
