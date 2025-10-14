@@ -1,16 +1,9 @@
-<!-- 🌲 Grove Project Banners -->
+<!-- 🌲 Grove Project Header: Banners + Badges -->
 <p align="center">
-  <img src="../../assets/banners/banner.svg" alt="Light Banner" width="45%" style="display:inline-block; margin-right:1%">
-  <img src="../../assets/banners/banner-dark.png" alt="Dark Banner" width="45%" style="display:inline-block;">
-</p>
-
-<!-- 🧠 Local Badges -->
-<p align="center">
-  <img src="./assets/badges/badge-ai.svg" alt="Grove AI" height="28"/>
-  <img src="./assets/badges/badge-prototype.svg" alt="Prototype" height="28"/>
-  <img src="./assets/badges/badge-beta.svg" alt="Beta" height="28"/>
-</p>
-
+  <!-- Light + Dark Banners -->
+  <img src="../../assets/banners/banner.svg" alt="Light Banner" width="45%" style="display:inline-block; vertical-align:middle; margin-right:1%">
+  <img src="../../assets/banners/banner-dark.png" alt="Dark Banner" width="45%" style="display:inline-block; vertical-align:middle;">
+  <br><br>
 <!-- 🏷️ Shields.io Dynamic Badges -->
 <p align="center">
   <a href="./">
@@ -29,9 +22,6 @@
     <img src="https://img.shields.io/badge/language-Python-3572A5.svg?style=flat-square" alt="Language: Python"/>
   </a>
 </p>
-
----
-
 <p align="center">
   <img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=flat-square" alt="Grove AI"/>
   <img src="https://img.shields.io/badge/Phase-Research%20Prototype-blue?style=flat-square" alt="Research Phase"/>
