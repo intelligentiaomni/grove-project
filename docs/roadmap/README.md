@@ -1,45 +1,46 @@
 <!-- Banner -->
 <p align="center">
-  <img src="./assets/banners/banner.svg" alt="Grove Banner" width="80%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/banners/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/banners/banner.svg">
+    <img src="./assets/banners/banner.svg" alt="Planet Grove — The future of intelligence" width="85%">
+  </picture>
 </p>
 
 <!-- Badges -->
 <p align="center">
-  <img src="./assets/badges/badge-ai.svg" alt="Grove AI" />
-  <img src="./assets/badges/badge-prototype.svg" alt="Prototype" />
-  <img src="./assets/badges/badge-beta.svg" alt="Beta" />
+  <img src="./assets/badges/badge-ai.svg" alt="Grove AI" height="28"/>
+  <img src="./assets/badges/badge-prototype.svg" alt="Prototype" height="28"/>
+  <img src="./assets/badges/badge-beta.svg" alt="Beta" height="28"/>
 </p>
 
 <!-- Project Shields -->
 <p align="center">
-  [![Status: Prototype](https://img.shields.io/badge/status-prototype-yellowgreen)](./)
-  [![Version](https://img.shields.io/badge/version-0.1.0-alpha-blueviolet)](./)
-  [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
-  [![Issues](https://github.com/principia-lab/grove-prototype/issues)](https://github.com/principia-lab/grove-prototype/issues)
-  [![Language: Python](https://img.shields.io/badge/language-Python-3572A5.svg)](./)
-</p>
-
----
-
-<p align="center">
-  <img src="assets/banner.svg" alt="Planet Grove — The future of intelligence" width="820"/>
-</p>
-
-<p align="center">
-  <img src="assets/badges/badge-beta.svg" alt="Beta status badge" height="28"/>
-  <img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=flat-square" alt="Grove AI badge"/>
-  <img src="https://img.shields.io/badge/Phase-Research%20Prototype-blue?style=flat-square" alt="Phase badge"/>
+  <a href="./">
+    <img src="https://img.shields.io/badge/status-prototype-yellowgreen" alt="Status: Prototype"/>
+  </a>
+  <a href="./">
+    <img src="https://img.shields.io/badge/version-0.1.0--alpha-blueviolet" alt="Version"/>
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="License: MIT"/>
+  </a>
+  <a href="https://github.com/principia-lab/grove-prototype/issues">
+    <img src="https://img.shields.io/github/issues/principia-lab/grove-prototype.svg" alt="Issues"/>
+  </a>
+  <a href="./">
+    <img src="https://img.shields.io/badge/language-Python-3572A5.svg" alt="Language: Python"/>
+  </a>
 </p>
 
 ---
 
 # 🌲 Grove Project
 
-**Principia Lab** early-stage AI R&D Foresight ecosystem  
-Building toward **planetary intelligence** as a civilizational and economic foundation.
-
-We explore deep learning, intelligent systems, and cross-disciplinary collaboration.  
-Our focus: building **AI-augmented scientific discovery tools** that advance sustainable research, responsible innovation, and long-term prosperity aligned with human values and shared global benefit.
+**The future of intelligence — An evolving ecosystem for AI-assisted discovery, learning, and collaboration.**
+ 
+Building toward **planetary intelligence** as a civilizational and economic foundation. We explore deep learning, intelligent systems, and cross-disciplinary collaboration.  
+Our focus: **AI-augmented scientific discovery tools** that advance sustainable research, responsible innovation, and long-term prosperity aligned with human values and shared global benefit.
 
 ---
 
@@ -59,7 +60,7 @@ The **Grove Project** unifies AI module to leverage scientific discovery.
 ## ⚙ Core Components
 
 - **Grove AI Dev** orchestration layer integrating GPT, Codex, DALL-E, Sora, Guardrails, and observability tools.  
-- **Grove Sprint Logger v2** correspondence system for async sprint workflows and collaboration.
+- **Grove Sprint Logger v2** correspondence system for async sprint workflows, AI-enhanced logbook stored as structured markdown for easy versioning, async review, and integration with discovery engines.
 - **Grove “Learn & Level-up” Builder Game** open-world simulation bridging coding, problem-solving, and research-based gameplay.  
 - **Trade-off Visualizer** Tufte-style reasoning dashboard.  
 - **Scientific Discovery** AI-augmented new energy materials discovery, properties, and systems scalable across disciplines.
@@ -95,7 +96,7 @@ Why
 - **This is a step toward scientific research co-pilots for next-gen cross-disciplinary lab**
 - **The broader aim is to enable scientific discovery in materials and systems integral to quantum infrastructure, superconductors and semiconductors**.
 
-“By combining deep reasoning and specialist agents, AI lab partners, and insight engines, we nurture early minds to become autonomous researchers equipped with critical thinking skills rooted in evidence.”
+“By combining deep reasoning and specialist agents, dynamic AI lab partners, and insight engines, we nurture early minds to become autonomous researchers equipped with critical thinking skills rooted in evidence.”
 
 Example Use Case
 
@@ -104,40 +105,43 @@ AI returns top candidate materials with reasoning and trade-off plots.
 
 ---
 
-## 🎮 Grove Learn & Level Up Game
+### **🎮 Grove Learn & Level Up Game**
 
 “Should’ve gone to Codeforces Gym”
 
-A coding and problem-solving game that is visually memorable and give players “missions” across iconic locations in tech and innovation hub Bay Area. Players complete sprints, level up, and unlock new modules as they simulate collaborative intelligence from a team of coders to planetary-scale systems.
-
-Goal: Progress from 0 to basic level, level up to gain points through interactive sprints to reach scoreboard momentum, leaderboard domination, and become part of a cluster of builders. Track XP, level up further, unlock mini-projects, and build skills step-by-step toward cooldown vibe coder awesomeness and opportunity readiness.
-
-Target group: 
-Education Edition for early scientist, professionals, curious learners (including families), and classrooms.  
-
-Gameplay Highlights
-
-- Solve hundreds of structured sprints under time pressure
-- Study problems with deceptive statements
-- Rapid triage skills
-- Clean implementation
-- Unlock missions across iconic innovation hubs
-- Train rapid reasoning and pattern recognition
-- Build team dynamics, trust, and composure
-- Choose AI companions, mentors with “shells”
-- Explore the Grove ecosystem as an evolving simulation of intelligence
+* **Personalized learning paths**: AI can suggest exercises, challenges, or “gyms” based on user skill and progress.
+* **Adaptive difficulty**: Dynamically adjust levels to keep users engaged.
+* **Intelligent hints / feedback**: Explain why a solution works or where mistakes occur.
+* **Pattern recognition**: Spot recurring gaps in knowledge across users and propose mini-challenges.
 
 ---
 
-## 📡 AI SprintLogger
+### **🤝 Reconnect Authenticator**
 
-AI-enhanced logbook for capturing sprints, reflections, and reasoning loops. Each session is stored as structured markdown for easy versioning, async review, and integration with discovery engines.
+* **Smart contact suggestions**: AI can identify who to reconnect with based on activity, network overlap, or prior interactions.
+* **Fraud / authenticity detection**: Flag suspicious requests before the user approves.
+* **Context-aware instructions**: Tailor next-step guidance for each recipient.
+* **Automated reconciliation**: Sync scattered identities across platforms intelligently.
 
-Next Versions
+---
 
-- v2 introduces multi-user sync
-- Tagging by module, goal, and sprint type
-- Integrated reasoning summaries and loop tracking
+### **📡 V2 Sprint Logger**
+
+* **Automated logging & summaries**: AI can interpret updates from code commits, messages, or meetings and log them.
+* **Predictive sprint insights**: Forecast blockers, estimate completion times, or suggest re-prioritization.
+* **Pattern detection**: Highlight recurring issues or successful patterns across sprints.
+* **Intelligent notifications**: Only alert the right people with relevant updates.
+
+---
+
+# **Tracking Plan**
+
+Serves as a **single source of truth** for analytics, monitoring, and iteration, supporting:
+
+* Production decision-making
+* User behavior analysis
+* Prototype and feature validation
+* Cross-concept insights for AI-enhanced features
 
 ## 📓 Logbook
 
@@ -161,38 +165,68 @@ This is early-stage and exploratory. Ideas, feedback, or collaboration → open 
 ## 🌳 Repository Structure
 ```
 grove-project/
-├─ README.md                   # Project overview (you are here)
-├─ index.md                    # Homepage content
-├─ about.md                    # About Principia Lab & Grove vision
-├─ research.md                 # Research questions, context
-├─ simulations.md              # Interactive and AI foresight prototypes
-├─ src/                        # Production modules
+├─ README.md                         # Project overview (with badges + roadmap anchors)
+├─ index.md                          # Homepage content
+├─ about.md                          # About Principia Lab & Grove vision
+├─ research.md                       # Research questions, context
+├─ simulations.md                    # Interactive and AI foresight prototypes
+│
+├─ src/                              # Production modules
 │   ├─ prompt_engine/
 │   ├─ visualizer/
 │   └─ utils/
-├─ prototypes/
+│
+├─ prototypes/                       # Experimental builds and mini-projects
 │   ├─ grove-prototype/
 │   ├─ early-christmas-lottery/
 │   └─ sprint-logger-v2/
+│
+├─ grove-ai-dev/                     # 🧠 NEW: Core AI Development layer
+│   ├─ README.md                     # Local readme with banner + badges
+│   ├─ assets/
+│   │   ├─ banner.svg
+│   │   └─ badges/
+│   │        ├─ badge-ai.svg
+│   │        ├─ badge-prototype.svg
+│   │        ├─ badge-beta.svg
+│   │        └─ badge-experimental.svg
+│   ├─ architecture/
+│   │   ├─ grove-ai-architecture.md
+│   │   └─ module-interface-specs.md
+│   ├─ integrations/
+│   │   ├─ sprintlogger-bridge.md
+│   │   ├─ builder-game-integration.md
+│   │   └─ discovery-tools-sync.md
+│   ├─ experiments/
+│   │   ├─ 2025-10-13-agent-shells-simulation.md
+│   │   └─ 2025-10-13-tradeoff-visualizer-ai.md
+│   └─ roadmap.md
+│
 ├─ grove-sprint-logger/
-│   └─ logs.md/
+│   └─ logs.md
+│
 ├─ backend-ai/
-│   ├─ index.js/
-│   ├─ tasksProcessor.js/
-│   └─ utils.js/
+│   ├─ index.js
+│   ├─ tasksProcessor.js
+│   └─ utils.js
+│
 ├─ concepts/
 │   ├─ grove-builder-game/
 │   └─ reconnect-authenticator/
+│
 ├─ assets/
 │   ├─ demos/
 │   ├─ diagrams/
 │   ├─ idea-thumbnails/
 │   └─ css/
+│
 ├─ docs/
-│   ├─ roadmap.md/		[Roadmap](#roadmap)
-│   ├─ tracking-plan.md/
+│   ├─ roadmap.md                    # Master roadmap linking to module sub-roadmaps
+│   ├─ tracking-plan.md
 │   ├─ styleguides/
 │   └─ archive/
+│
 └─ scripts/
-    └─ generate-log.js/
+    └─ generate-log.js
+
 ```
