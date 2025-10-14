@@ -61,9 +61,9 @@ The **Grove Project** unifies AI module to leverage scientific discovery.
 - **Grove AI Dev** orchestration layer integrating GPT, Codex, DALL-E, Sora, Guardrails, and observability tools.  
 - **Grove Sprint Logger v2** correspondence system for async sprint workflows and collaboration.
 - **Grove “Learn & Level-up” Builder Game** open-world simulation bridging coding, problem-solving, and research-based gameplay.  
-- **Trade-off Visualizer** — Tufte-style reasoning dashboard.  
-- **Scientific Discovery — AI-augmented new energy materials discovery, properties, and systems scalable across disciplines.
-- **Collaboration to foster a broader culture of purpose-driven innovation.
+- **Trade-off Visualizer** Tufte-style reasoning dashboard.  
+- **Scientific Discovery** AI-augmented new energy materials discovery, properties, and systems scalable across disciplines.
+- **Collaboration to foster a broader culture of purpose-driven innovation**.
 
 ---
 
@@ -93,7 +93,7 @@ Why
 - **Relatively developed experimental data and pipelines to integrate AI tools**
 - **Potential breakthroughs** → improved systems, safer, efficient, resilient infrastructure adaptive to changing, uncertain conditions, less costs etc. 
 - **This is a step toward scientific research co-pilots for next-gen cross-disciplinary lab**
-- **The broader aim is to enable scientific discovery in materials and systems integral to quantum infrastructure, superconductors and semiconductors.
+- **The broader aim is to enable scientific discovery in materials and systems integral to quantum infrastructure, superconductors and semiconductors**.
 
 “By combining deep reasoning and specialist agents, AI lab partners, and insight engines, we nurture early minds to become autonomous researchers equipped with critical thinking skills rooted in evidence.”
 
