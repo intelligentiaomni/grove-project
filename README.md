@@ -1,7 +1,7 @@
 <!-- 🌲 Grove Project Banners -->
 <p align="center">
   <img src="../../assets/banners/banner.svg" alt="Light Banner" width="45%" style="display:inline-block; margin-right:1%">
-  <img src="../../assets/banners/banner-dark.svg" alt="Dark Banner" width="45%" style="display:inline-block;">
+  <img src="../../assets/banners/banner-dark.png" alt="Dark Banner" width="45%" style="display:inline-block;">
 </p>
 
 <!-- 🧠 Local Badges -->
@@ -31,10 +31,6 @@
 </p>
 
 ---
-
-<p align="center">
-  <img src="./assets/banner.svg" alt="Planet Grove — The Future of Intelligence" width="820"/>
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=flat-square" alt="Grove AI"/>
