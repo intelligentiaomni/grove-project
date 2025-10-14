@@ -1,36 +1,43 @@
-<!-- Banner -->
+<!-- 🌲 Grove Project Banner -->
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/banners/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/banners/banner.svg">
-    <img src="./assets/banners/banner.svg" alt="Planet Grove — The future of intelligence" width="85%">
-  </picture>
+  <img src="./assets/banners/banner.svg" alt="Grove Project Banner" width="85%">
 </p>
 
-<!-- Badges -->
+<!-- 🧠 Local Badges -->
 <p align="center">
   <img src="./assets/badges/badge-ai.svg" alt="Grove AI" height="28"/>
   <img src="./assets/badges/badge-prototype.svg" alt="Prototype" height="28"/>
   <img src="./assets/badges/badge-beta.svg" alt="Beta" height="28"/>
 </p>
 
-<!-- Project Shields -->
+<!-- 🏷️ Shields.io Dynamic Badges -->
 <p align="center">
   <a href="./">
-    <img src="https://img.shields.io/badge/status-prototype-yellowgreen" alt="Status: Prototype"/>
+    <img src="https://img.shields.io/badge/status-prototype-yellowgreen?style=flat-square" alt="Status: Prototype"/>
   </a>
   <a href="./">
-    <img src="https://img.shields.io/badge/version-0.1.0--alpha-blueviolet" alt="Version"/>
+    <img src="https://img.shields.io/badge/version-0.1.0--alpha-blueviolet?style=flat-square" alt="Version 0.1.0-alpha"/>
   </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="License: MIT"/>
+  <a href="./LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square" alt="License: MIT"/>
   </a>
   <a href="https://github.com/principia-lab/grove-prototype/issues">
-    <img src="https://img.shields.io/github/issues/principia-lab/grove-prototype.svg" alt="Issues"/>
+    <img src="https://img.shields.io/github/issues/principia-lab/grove-prototype?style=flat-square" alt="GitHub Issues"/>
   </a>
   <a href="./">
-    <img src="https://img.shields.io/badge/language-Python-3572A5.svg" alt="Language: Python"/>
+    <img src="https://img.shields.io/badge/language-Python-3572A5.svg?style=flat-square" alt="Language: Python"/>
   </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="./assets/banner.svg" alt="Planet Grove — The Future of Intelligence" width="820"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=flat-square" alt="Grove AI"/>
+  <img src="https://img.shields.io/badge/Phase-Research%20Prototype-blue?style=flat-square" alt="Research Phase"/>
 </p>
 
 ---
