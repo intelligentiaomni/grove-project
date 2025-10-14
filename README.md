@@ -1,6 +1,7 @@
-<!-- 🌲 Grove Project Banner -->
+<!-- 🌲 Grove Project Banners -->
 <p align="center">
-  <img src="./assets/banners/banner.svg" alt="Grove Project Banner" width="85%">
+  <img src="../../assets/banners/banner.svg" alt="Light Banner" width="45%" style="display:inline-block; margin-right:1%">
+  <img src="../../assets/banners/banner-dark.svg" alt="Dark Banner" width="45%" style="display:inline-block;">
 </p>
 
 <!-- 🧠 Local Badges -->
