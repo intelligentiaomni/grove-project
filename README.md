@@ -1,7 +1,7 @@
 <!-- 🌲 Grove Project Header: Banners + Badges -->
 <p align="center">
   <!-- Light + Dark Banners -->
-  <img src="https://github.com/principia-lab/grove-project/raw/main/assets/banners/banner.svg" alt="Light Banner" width="45%" style="display:inline-block; vertical-align:middle; margin-right:1%">
+  <img src="https://github.com/principia-lab/grove-project/raw/main/assets/banners/banner.svg" alt="Light Banner" width="48%" style="display:inline-block; vertical-align:middle; margin-right:1%">
   <img src="https://github.com/principia-lab/grove-project/raw/main/assets/banners/banner-dark.png" alt="Dark Banner" width="45%" style="display:inline-block; vertical-align:middle;">
   <br><br>
 <!-- 🏷️ Shields.io Dynamic Badges -->
