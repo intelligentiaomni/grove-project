@@ -1,26 +1,47 @@
-<!-- badges: public-safe -->
-[![Status: Prototype](https://img.shields.io/badge/status-prototype-yellowgreen)](./)
-[![Version](https://img.shields.io/badge/version-0.1.0-alpha-blueviolet)](./)
-[![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/principia-lab/grove-prototype)](https://github.com/principia-lab/grove-prototype/issues)
-[![Language: Python](https://img.shields.io/badge/language-Python-3572A5.svg)](./)
-@"
-<svg xmlns="http://www.w3.org/2000/svg" width="110" height="28">
-  <rect width="110" height="28" rx="5" fill="#4CBB17"/>
-  <text x="55" y="18" font-size="13" font-family="Verdana" fill="#fff" text-anchor="middle">🌱 Grove AI</text>
-</svg>
-"@ | Out-File "badge-ai.svg" -Encoding utf8
+# badges.ps1
+# Auto-generate Grove project badges and push to GitHub
 
-@"
-<svg xmlns="http://www.w3.org/2000/svg" width="110" height="28">
-  <rect width="110" height="28" rx="5" fill="#0078D7"/>
-  <text x="55" y="18" font-size="13" font-family="Verdana" fill="#fff" text-anchor="middle">🧠 Prototype</text>
-</svg>
-"@ | Out-File "badge-prototype.svg" -Encoding utf8
+Write-Host "🌲 Generating Grove badges..." -ForegroundColor Green
 
+# Set up the path to assets/badges/
+$badgeDir = Join-Path $PSScriptRoot "..\assets\badges"
+
+# Ensure folder exists
+New-Item -ItemType Directory -Force -Path $badgeDir | Out-Null
+
+# Grove AI badge
 @"
-<svg xmlns="http://www.w3.org/2000/svg" width="110" height="28">
-  <rect width="110" height="28" rx="5" fill="#FFB000"/>
-  <text x="55" y="18" font-size="13" font-family="Verdana" fill="#fff" text-anchor="middle">🚀 Beta</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="28">
+  <rect width="120" height="28" rx="6" fill="#4CBB17"/>
+  <text x="60" y="18" font-size="13" font-family="Segoe UI, Verdana, sans-serif" fill="#fff" text-anchor="middle">🌱 Grove AI</text>
 </svg>
-"@ | Out-File "badge-beta.svg" -Encoding utf8
+"@ | Out-File (Join-Path $badgeDir "badge-ai.svg") -Encoding utf8
+
+# Prototype badge
+@"
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="28">
+  <rect width="120" height="28" rx="6" fill="#0078D7"/>
+  <text x="60" y="18" font-size="13" font-family="Segoe UI, Verdana, sans-serif" fill="#fff" text-anchor="middle">🧠 Prototype</text>
+</svg>
+"@ | Out-File (Join-Path $badgeDir "badge-prototype.svg") -Encoding utf8
+
+# Beta badge
+@"
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="28">
+  <rect width="120" height="28" rx="6" fill="#FFB000"/>
+  <text x="60" y="18" font-size="13" font-family="Segoe UI, Verdana, sans-serif" fill="#fff" text-anchor="middle">🚀 Beta</text>
+</svg>
+"@ | Out-File (Join-Path $badgeDir "badge-beta.svg") -Encoding utf8
+
+Write-Host " Badges generated at $badgeDir" -ForegroundColor Cyan
+
+# Move to repo root
+$repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
+Set-Location $repoRoot
+
+# Git operations
+git add assets/badges
+git commit -m "Auto: regenerate Grove badges" --allow-empty
+git push
+
+Write-Host " Badges committed and pushed successfully!" -ForegroundColor Green

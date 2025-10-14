@@ -128,11 +128,11 @@ Simple Connection Workflow →
 
 Concept Overview
 A lightweight, human-centered tool that helps users:
-
+```
 [x] Streamline trust 
 [x] Prove authenticity
 [x] Sync scattered identities and reconnect with contacts across networks, social channels and messaging platforms
-
+```
 ---
 
 ## Repository Structure
@@ -144,11 +144,11 @@ grove-project/
 ├─ simulations.md         			# Placeholder for interactive work
 ├─ README.md              			# Public explanation of the project
 ├─ LICENSE.txt            			# MIT License (code)
-├─ src/                           		# Production modules
+├─ src/                         # Production modules
 │   ├─ prompt_engine/
 │   ├─ visualizer/
 │   └─ utils/
-├─ prototypes/					# Experimental module (status, tags, date)
+├─ prototypes/					        # Experimental module (status, tags, date)
 │	├─ grove-builder/
 │       │   ├─ README.md               
 │       │   ├─ index.html
@@ -159,21 +159,19 @@ grove-project/
 │       ├─ early-christmas-lottery
 │       └─ sprint-logger-v2
 │           └─ README.md
-├─ grove-sprint-logger/     			# Integrated module 
+├─ grove-sprint-logger/     		# Integrated module 
 │    └─ log.md
-├─ backend-ai/              			# Serverless backend 
+├─ backend-ai/              		# Serverless backend 
 │   ├─ index.js
 │   ├─ tasksProcessor.js
 │   └─ utils.js│    
-├─ logs/ 
-│   ├─ 2025-10-03-sprint-aletheia.md 		# Async sprint logs (tracking)        			
-│   └─ 2025-10-03-sprint-lee.md    
+├─ logs/                        # Async sprint logs 
 ├─ concepts/
-│    ├─						# Sandboxed early-stage ideas, raw notes, future prototype seeds, drafts and placeholders
+│    ├─						              # Raw notes, drafts and placeholders
 │    ├─ grove-builder-game
 │    ├─ reconnect-authenticator 
 │    └─ experimental-log.md
-├─ tasks-completed/         			# Tick-only progress
+├─ tasks-completed/         		# Tick-only progress
 │   ├─ alpha/
 │   └─ beta/
 ├─ _config.yml            			# Jekyll config 
@@ -181,27 +179,27 @@ grove-project/
 │   └─ default.html        			# Clean site structure
 ├─ _includes/
 │    └─ footer.html 
-├─ assets/					# Visuals, GIFs, screen shots, sketches (Chart.js, JS utils)
+├─ assets/					            # Visuals, GIFs, screen shots, sketches (Chart.js, JS utils)
 │   ├─ voice samples                     		
 │   ├─ idea-thumbnails/
 │   │   ├─ grove-builder.png
 │   │   └─ puzzle-generator.gif
 │   ├─ demos/
-│   │	├─ sprint-logger-demo.gif
+│   │	  ├─ sprint-logger-demo.gif
 │   │   ├─ grove-builder-demo.gif
 │   │   └─ reconnect-demo.mp4
 │   ├─ diagrams 
 │   └─ css/
-│       └─ style.css      			# Optional custom styling
-├─ scripts/                     		# Helpers
-│     └─ generate-log.js        		# Auto-create logs with labels
+│       └─ style.css      			
+├─ scripts/                     # Helpers
+│     └─ generate-log.js        # Auto-create logs with labels
 │
 └─ docs
     ├─ tracking-plan.md
-    ├─ roadmap.md				# Prioritization and dependencies
+    ├─ roadmap.md				        # Prioritization and dependencies [View Roadmap](docs/roadmap/roadmap.md)
     ├─ styleguides/
-    │   ├─ ui-branding.md              		# UI, branding guide
-    │   └─ assets     				# logos, icons, favicons	  					
+    │   ├─ ui-branding.md       # UI, branding guide
+    │   └─ assets     				  # Logos, icons, favicons	  					
     └─ archive 
     	 
 ```
