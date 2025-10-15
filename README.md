@@ -1,17 +1,140 @@
-<!-- 🌲 Grove Project Header: Interactive Demo + Light Banner -->
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1280 720"
+     width="1280" height="720"
+     role="img"
+     aria-label="Grove prototype banner - monochrome green loop">
 
-<p align="center">
-  <!-- Interactive demo GIF preview -->
-  <a href="https://principia-lab.github.io/grove-prototype/docs/assets/grove-banner.html" target="_blank">
-    <img src="docs/assets/demo.gif" alt="Grove Prototype Interactive Banner" width="100%">
-  </a>
-</p>
+  <metadata>Grove Banner v1 — monochrome green, loopable SVG</metadata>
 
-<p align="center">
-  <!-- Light Banner (static SVG) -->
-  <img src="https://github.com/principia-lab/grove-project/raw/main/assets/banners/banner.svg" 
-       alt="Light Banner" width="70%" style="display:inline-block; vertical-align:middle; margin-right:1%">
-</p>
+  <defs>
+    <!-- palette -->
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f2fff4"/>
+      <stop offset="1" stop-color="#eefef0"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#cffcdf" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#dfffe2" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- node circle style -->
+    <style type="text/css"><![CDATA[
+      .bg { fill: url(#bg); }
+      .grid-line { stroke: #c8f0d6; stroke-width: .6; opacity: .45; }
+      .trail { fill: none; stroke: #3ecf8e; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; filter: url(#softGlow); }
+      .branch { fill: none; stroke: #2b7a4b; stroke-width: 1.2; opacity: .9; }
+      .seed { fill: #2b7a4b; filter: url(#softGlow); }
+      .node { fill: #3ecf8e; filter: url(#softGlow); opacity: 0.0; transform-origin: center; }
+      .title { fill: #2b7a4b; font-family: "Segoe UI", Roboto, system-ui, sans-serif; font-weight: 600; font-size:34px; letter-spacing:2px; opacity:0.0; }
+    ]]></style>
+  </defs>
+
+  <!-- background -->
+  <rect class="bg" x="0" y="0" width="1280" height="720"/>
+
+  <!-- faint horizontal grid (Bourne-like lines) -->
+  <g opacity="0.18">
+    <line class="grid-line" x1="0" y1="180" x2="1280" y2="180"/>
+    <line class="grid-line" x1="0" y1="360" x2="1280" y2="360"/>
+    <line class="grid-line" x1="0" y1="540" x2="1280" y2="540"/>
+    <line class="grid-line" x1="640" y1="0" x2="640" y2="720"/>
+  </g>
+
+  <!-- subtle glow behind center -->
+  <circle cx="640" cy="360" r="260" fill="url(#glow)" opacity="0.35"/>
+
+  <!-- branches (static underlying structure) -->
+  <g stroke-linecap="round">
+    <path class="branch" d="M640,360 C700,300 780,260 860,230" />
+    <path class="branch" d="M640,360 C580,300 520,260 440,230" />
+    <path class="branch" d="M640,360 C690,410 740,480 780,540" />
+    <path class="branch" d="M640,360 C590,420 540,480 500,540" />
+  </g>
+
+  <!-- animated glowing trail (main dynamic path) -->
+  <path id="trail" class="trail"
+        d="M500,540
+           C560,420 610,360 640,360
+           C670,360 720,400 780,540
+           C860,420 940,300 1000,220" />
+
+  <!-- stroke-dasharray animation to draw / erase -->
+  <animate xlink:href="#trail"
+           attributeName="stroke-dasharray"
+           from="0 2000" to="2000 0"
+           dur="5.6s"
+           begin="0s"
+           repeatCount="indefinite"
+           fill="freeze" />
+
+  <!-- fade the trail in/out smoothly -->
+  <animate xlink:href="#trail"
+           attributeName="opacity"
+           values="0;1;1;0"
+           keyTimes="0;0.1;0.85;1"
+           dur="5.6s"
+           begin="0s"
+           repeatCount="indefinite" />
+
+  <!-- central seed -->
+  <g transform="translate(640,360)">
+    <circle class="seed" cx="0" cy="0" r="8" />
+    <!-- seed pulse -->
+    <animateTransform attributeName="transform"
+                      attributeType="XML"
+                      type="scale"
+                      values="1;1.28;1"
+                      dur="2.2s"
+                      repeatCount="indefinite"
+                      begin="0s" />
+  </g>
+
+  <!-- nodes at path endpoints and intermediates -->
+  <g id="nodes">
+    <circle class="node" id="n1" cx="1000" cy="220" r="8" />
+    <circle class="node" id="n2" cx="500" cy="540" r="7" />
+    <circle class="node" id="n3" cx="780" cy="540" r="6" />
+    <circle class="node" id="n4" cx="440" cy="230" r="6.5" />
+    <circle class="node" id="n5" cx="860" cy="230" r="6" />
+  </g>
+
+  <!-- node pop animation staggered -->
+  <animate xlink:href="#n2" attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.0s" fill="freeze" />
+  <animateTransform xlink:href="#n2" attributeName="transform" type="scale" from="0.6" to="1.3" dur="0.5s" begin="1.0s" fill="freeze" />
+  <animate xlink:href="#n3" attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.4s" fill="freeze" />
+  <animateTransform xlink:href="#n3" attributeName="transform" type="scale" from="0.6" to="1.2" dur="0.45s" begin="1.4s" fill="freeze" />
+  <animate xlink:href="#n4" attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.7s" fill="freeze" />
+  <animateTransform xlink:href="#n4" attributeName="transform" type="scale" from="0.6" to="1.15" dur="0.45s" begin="1.7s" fill="freeze" />
+  <animate xlink:href="#n5" attributeName="opacity" from="0" to="1" dur="0.35s" begin="2.0s" fill="freeze" />
+  <animateTransform xlink:href="#n5" attributeName="transform" type="scale" from="0.6" to="1.15" dur="0.45s" begin="2.0s" fill="freeze" />
+  <animate xlink:href="#n1" attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.4s" fill="freeze" />
+  <animateTransform xlink:href="#n1" attributeName="transform" type="scale" from="0.6" to="1.28" dur="0.6s" begin="2.4s" fill="freeze" />
+
+  <!-- gentle node breathing (repeats) -->
+  <animateTransform xlink:href="#n1" attributeName="transform" type="scale"
+                    values="1 1;1.06 1.06;1 1" dur="3.6s" begin="3.2s" repeatCount="indefinite" />
+  <animateTransform xlink:href="#n3" attributeName="transform" type="scale"
+                    values="1;1.05;1" dur="4.2s" begin="3s" repeatCount="indefinite" />
+
+  <!-- title text (Queen's Gambit minimal fade) -->
+  <text class="title" x="640" y="640" text-anchor="middle" dominant-baseline="middle">GROVE — prototype</text>
+  <animate xlink:href=".title" attributeName="opacity"
+           values="0;0;1;1;0" keyTimes="0;0.25;0.45;0.85;1" dur="5.6s" repeatCount="indefinite" />
+
+  <!-- subtle overall fade to make loop palatable -->
+  <animate attributeName="opacity" dur="5.6s" values="1;1;0.95;1" repeatCount="indefinite" />
+
+</svg>
 
 <br><br>
 
