@@ -1,140 +1,160 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1280 720"
-     width="1280" height="720"
-     role="img"
-     aria-label="Grove prototype banner - monochrome green loop">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grove Game Teaser v1.8 — Companions</title>
+<style>
+  body { margin:0; background:#eaf4eb; overflow:hidden; }
+  svg { display:block; margin:auto; background:#eaf4eb; }
+</style>
+</head>
+<body>
 
-  <metadata>Grove Banner v1 — monochrome green, loopable SVG</metadata>
-
+<svg viewBox="0 0 1280 720" width="1280" height="720">
   <defs>
-    <!-- palette -->
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0" stop-color="#f2fff4"/>
-      <stop offset="1" stop-color="#eefef0"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="720">
+      <stop offset="0%" stop-color="#d4f0d8"/>
+      <stop offset="100%" stop-color="#b6e8c3"/>
     </linearGradient>
-
-    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
-      <stop offset="0" stop-color="#cffcdf" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#dfffe2" stop-opacity="0"/>
-    </radialGradient>
-
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
-        <feMergeNode in="b"/>
+        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <!-- node circle style -->
-    <style type="text/css"><![CDATA[
-      .bg { fill: url(#bg); }
-      .grid-line { stroke: #c8f0d6; stroke-width: .6; opacity: .45; }
-      .trail { fill: none; stroke: #3ecf8e; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; filter: url(#softGlow); }
-      .branch { fill: none; stroke: #2b7a4b; stroke-width: 1.2; opacity: .9; }
-      .seed { fill: #2b7a4b; filter: url(#softGlow); }
-      .node { fill: #3ecf8e; filter: url(#softGlow); opacity: 0.0; transform-origin: center; }
-      .title { fill: #2b7a4b; font-family: "Segoe UI", Roboto, system-ui, sans-serif; font-weight: 600; font-size:34px; letter-spacing:2px; opacity:0.0; }
-    ]]></style>
+    <pattern id="codeOverlay" width="60" height="20" patternUnits="userSpaceOnUse">
+      <text x="0" y="14" font-family="JetBrains Mono, monospace" font-size="14" fill="#2a7a4b" opacity="0.06">
+        if(seed){grow();} // Grove
+      </text>
+    </pattern>
   </defs>
 
-  <!-- background -->
-  <rect class="bg" x="0" y="0" width="1280" height="720"/>
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
 
-  <!-- faint horizontal grid (Bourne-like lines) -->
-  <g opacity="0.18">
-    <line class="grid-line" x1="0" y1="180" x2="1280" y2="180"/>
-    <line class="grid-line" x1="0" y1="360" x2="1280" y2="360"/>
-    <line class="grid-line" x1="0" y1="540" x2="1280" y2="540"/>
-    <line class="grid-line" x1="640" y1="0" x2="640" y2="720"/>
+  <!-- Rothko blocks -->
+  <g id="blocks">
+    <rect x="100" y="80" width="180" height="120" fill="#b5e2c8" opacity="0.15"/>
+    <rect x="500" y="200" width="220" height="160" fill="#9fd9aa" opacity="0.12"/>
+    <rect x="900" y="100" width="200" height="180" fill="#c1f0d2" opacity="0.10"/>
   </g>
 
-  <!-- subtle glow behind center -->
-  <circle cx="640" cy="360" r="260" fill="url(#glow)" opacity="0.35"/>
+  <!-- Seed -->
+  <circle cx="640" cy="360" r="8" fill="#2a7a4b" filter="url(#softGlow)">
+    <animateTransform attributeName="transform" type="scale" values="1;1.25;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- branches (static underlying structure) -->
-  <g stroke-linecap="round">
-    <path class="branch" d="M640,360 C700,300 780,260 860,230" />
-    <path class="branch" d="M640,360 C580,300 520,260 440,230" />
-    <path class="branch" d="M640,360 C690,410 740,480 780,540" />
-    <path class="branch" d="M640,360 C590,420 540,480 500,540" />
+  <!-- Glowing trail -->
+  <path id="trail" d="M500,540 C560,400 620,360 640,360 C660,360 720,400 800,540"
+        fill="none" stroke="#32cf8e" stroke-width="3" stroke-linecap="round" filter="url(#softGlow)">
+    <animate attributeName="stroke-dasharray" from="0 2000" to="2000 0" dur="6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Nodes -->
+  <circle cx="500" cy="540" r="7" fill="#35d08c" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1s" fill="freeze"/>
+  </circle>
+
+  <!-- Code overlay -->
+  <rect width="1280" height="720" fill="url(#codeOverlay)"/>
+
+  <!-- Title -->
+  <text x="640" y="640" text-anchor="middle" font-size="36" font-weight="600" fill="#2a7a4b" opacity="0">
+    GROVE — Prototype
+    <animate attributeName="opacity" values="0;1;1;0" dur="8s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Tagline -->
+  <text x="640" y="680" text-anchor="middle" font-size="18" font-family="JetBrains Mono, monospace" fill="#2a7a4b" opacity="0">
+    "In the circuits of silence, I debug the forest within."
+    <animate attributeName="opacity" values="0;0;1;0" dur="8s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Easter Egg 0: Binary 0 → Blue Jay -->
+  <circle id="egg0" cx="650" cy="360" r="8" fill="#0d6efd" opacity="0"/>
+  <path id="birdPath" d="M650,360 Q660,350 700,300" fill="none" stroke="none"/>
+  <path id="birdShape" d="M650,360 m0,-8 a8,8 0 1,0 0,16 a8,8 0 1,0 0,-16" fill="#0d6efd" opacity="0"/>
+
+  <!-- Easter Egg 1: Companions -->
+  <g id="companions" opacity="0">
+    <!-- TARS -->
+    <g id="TARS" transform="translate(570,280)">
+      <rect x="0" y="0" width="40" height="60" fill="#666" rx="4" ry="4"/>
+      <rect x="10" y="10" width="20" height="6" fill="#0ff"/>
+      <rect x="10" y="24" width="20" height="6" fill="#0ff"/>
+    </g>
+    <!-- Pilot Shell -->
+    <g id="pilotShell" transform="translate(590,290)">
+      <path d="M0,0 Q10,-20 20,0 Q10,10 0,0" fill="none" stroke="#88eeff" stroke-width="1"/>
+      <circle cx="10" cy="-5" r="1.5" fill="#88eeff"/>
+    </g>
   </g>
 
-  <!-- animated glowing trail (main dynamic path) -->
-  <path id="trail" class="trail"
-        d="M500,540
-           C560,420 610,360 640,360
-           C670,360 720,400 780,540
-           C860,420 940,300 1000,220" />
-
-  <!-- stroke-dasharray animation to draw / erase -->
-  <animate xlink:href="#trail"
-           attributeName="stroke-dasharray"
-           from="0 2000" to="2000 0"
-           dur="5.6s"
-           begin="0s"
-           repeatCount="indefinite"
-           fill="freeze" />
-
-  <!-- fade the trail in/out smoothly -->
-  <animate xlink:href="#trail"
-           attributeName="opacity"
-           values="0;1;1;0"
-           keyTimes="0;0.1;0.85;1"
-           dur="5.6s"
-           begin="0s"
-           repeatCount="indefinite" />
-
-  <!-- central seed -->
-  <g transform="translate(640,360)">
-    <circle class="seed" cx="0" cy="0" r="8" />
-    <!-- seed pulse -->
-    <animateTransform attributeName="transform"
-                      attributeType="XML"
-                      type="scale"
-                      values="1;1.28;1"
-                      dur="2.2s"
-                      repeatCount="indefinite"
-                      begin="0s" />
-  </g>
-
-  <!-- nodes at path endpoints and intermediates -->
-  <g id="nodes">
-    <circle class="node" id="n1" cx="1000" cy="220" r="8" />
-    <circle class="node" id="n2" cx="500" cy="540" r="7" />
-    <circle class="node" id="n3" cx="780" cy="540" r="6" />
-    <circle class="node" id="n4" cx="440" cy="230" r="6.5" />
-    <circle class="node" id="n5" cx="860" cy="230" r="6" />
-  </g>
-
-  <!-- node pop animation staggered -->
-  <animate xlink:href="#n2" attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.0s" fill="freeze" />
-  <animateTransform xlink:href="#n2" attributeName="transform" type="scale" from="0.6" to="1.3" dur="0.5s" begin="1.0s" fill="freeze" />
-  <animate xlink:href="#n3" attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.4s" fill="freeze" />
-  <animateTransform xlink:href="#n3" attributeName="transform" type="scale" from="0.6" to="1.2" dur="0.45s" begin="1.4s" fill="freeze" />
-  <animate xlink:href="#n4" attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.7s" fill="freeze" />
-  <animateTransform xlink:href="#n4" attributeName="transform" type="scale" from="0.6" to="1.15" dur="0.45s" begin="1.7s" fill="freeze" />
-  <animate xlink:href="#n5" attributeName="opacity" from="0" to="1" dur="0.35s" begin="2.0s" fill="freeze" />
-  <animateTransform xlink:href="#n5" attributeName="transform" type="scale" from="0.6" to="1.15" dur="0.45s" begin="2.0s" fill="freeze" />
-  <animate xlink:href="#n1" attributeName="opacity" from="0" to="1" dur="0.4s" begin="2.4s" fill="freeze" />
-  <animateTransform xlink:href="#n1" attributeName="transform" type="scale" from="0.6" to="1.28" dur="0.6s" begin="2.4s" fill="freeze" />
-
-  <!-- gentle node breathing (repeats) -->
-  <animateTransform xlink:href="#n1" attributeName="transform" type="scale"
-                    values="1 1;1.06 1.06;1 1" dur="3.6s" begin="3.2s" repeatCount="indefinite" />
-  <animateTransform xlink:href="#n3" attributeName="transform" type="scale"
-                    values="1;1.05;1" dur="4.2s" begin="3s" repeatCount="indefinite" />
-
-  <!-- title text (Queen's Gambit minimal fade) -->
-  <text class="title" x="640" y="640" text-anchor="middle" dominant-baseline="middle">GROVE — prototype</text>
-  <animate xlink:href=".title" attributeName="opacity"
-           values="0;0;1;1;0" keyTimes="0;0.25;0.45;0.85;1" dur="5.6s" repeatCount="indefinite" />
-
-  <!-- subtle overall fade to make loop palatable -->
-  <animate attributeName="opacity" dur="5.6s" values="1;1;0.95;1" repeatCount="indefinite" />
+  <path id="signalPath" d="M590,280 Q600,220 640,180" fill="none" stroke="none"/>
+  <circle id="spaceship" r="6" fill="#0ff" opacity="0"/>
 
 </svg>
+
+<script>
+const egg0 = document.querySelector('#egg0');
+const bird = document.querySelector('#birdShape');
+const companions = document.querySelector('#companions');
+const TARS = document.querySelector('#TARS');
+const pilot = document.querySelector('#pilotShell');
+const spaceship = document.querySelector('#spaceship');
+const signalPath = document.querySelector('#signalPath');
+
+// Easter Egg 0: Binary 0 → Blue Jay
+setTimeout(()=>{
+  egg0.setAttribute('opacity',1);
+  setTimeout(()=>{
+    egg0.setAttribute('opacity',0);
+    bird.setAttribute('opacity',1);
+    const path = document.querySelector('#birdPath');
+    const len = path.getTotalLength();
+    let start=null;
+    function fly(t){
+      if(!start) start=t;
+      const progress=(t-start)/4000;
+      if(progress<1){
+        const p = path.getPointAtLength(len*progress);
+        bird.setAttribute('transform',`translate(${p.x-650},${p.y-360})`);
+        requestAnimationFrame(fly);
+      } else bird.setAttribute('opacity',0);
+    }
+    requestAnimationFrame(fly);
+  },1000);
+},4000);
+
+// Easter Egg 1: Companions (TARS + Pilot)
+setTimeout(()=>{
+  companions.setAttribute('opacity',1);
+  spaceship.setAttribute('opacity',1);
+  const len = signalPath.getTotalLength();
+  let start=null;
+  function animateCompanions(t){
+    if(!start) start=t;
+    const progress = (t-start)/3000;
+    if(progress < 1){
+      const p = signalPath.getPointAtLength(len*progress);
+      // TARS moves along path
+      TARS.setAttribute('transform', `translate(${p.x-570},${p.y-280})`);
+      // Pilot shell follows offset
+      pilot.setAttribute('transform', `translate(${p.x-580},${p.y-270})`);
+      // Spaceship tracks signal
+      spaceship.setAttribute('cx', p.x);
+      spaceship.setAttribute('cy', p.y);
+      requestAnimationFrame(animateCompanions);
+    } else companions.setAttribute('opacity',0);
+  }
+  requestAnimationFrame(animateCompanions);
+},8000);
+
+</script>
+
+</body>
+</html>
 
 <br><br>
 
