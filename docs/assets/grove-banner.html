@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Grove Ecosystem Banner</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<style>
+  body {
+    margin: 0;
+    background: radial-gradient(ellipse at center, #0b1e12 0%, #041109 100%);
+    display: flex; justify-content: center; align-items: center;
+    height: 100vh;
+  }
+  svg { width: 90vw; max-width: 900px; cursor: default; }
+  text { pointer-events: none; }
+  .glow { filter: url(#glow); }
+  .label { font-family: monospace; font-size: 12px; fill: #b2ff59; opacity: 0; }
+</style>
+</head>
+<body>
+
+<svg id="grove" viewBox="0 0 800 600">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- seed -->
+  <circle id="seed" cx="400" cy="500" r="10" fill="#6be585" class="glow"/>
+
+  <!-- root -->
+  <path id="root" d="M400,500 C400,520 380,540 380,560" stroke="#4caf50"
+        stroke-width="2.5" fill="none" opacity="0"/>
+
+  <!-- sprout stem -->
+  <path id="sprout" d="M400,500 C400,480 400,460 400,430" stroke="#81c784"
+        stroke-width="3" fill="none" opacity="0"/>
+
+  <!-- branches -->
+  <path id="branchL" d="M400,450 C380,440 370,420 360,410" stroke="#81c784"
+        stroke-width="2" fill="none" opacity="0"/>
+  <path id="branchR" d="M400,440 C420,430 430,410 440,400" stroke="#81c784"
+        stroke-width="2" fill="none" opacity="0"/>
+
+  <!-- leaves (modules) -->
+  <circle id="leafL" cx="360" cy="410" r="6" fill="#a5d6a7" opacity="0" class="module"/>
+  <circle id="leafR" cx="440" cy="400" r="6" fill="#a5d6a7" opacity="0" class="module"/>
+  <circle id="leafC" cx="400" cy="430" r="5" fill="#a5d6a7" opacity="0" class="module"/>
+
+  <!-- labels -->
+  <text id="labelL" x="340" y="395" class="label">AI Lab</text>
+  <text id="labelC" x="410" y="425" class="label">Tradeoff Visualizer</text>
+  <text id="labelR" x="455" y="390" class="label">Reputation Layer</text>
+
+  <!-- easter egg -->
+  <text id="egg" x="410" y="370" font-family="monospace" font-size="10"
+        fill="#b2ff59" opacity="0">🌌 404: curiosity found</text>
+</svg>
+
+<script>
+const tl = gsap.timeline({ defaults: { ease: "power1.inOut" } });
+
+// seed pulse forever
+gsap.to("#seed", {
+  attr: { r: 14 },
+  duration: 1.6,
+  repeat: -1,
+  yoyo: true,
+  ease: "sine.inOut"
+});
+
+// sequential growth
+tl.to("#root", { opacity: 1, duration: 1.2, delay: 0.6 })
+  .to("#sprout", { opacity: 1, duration: 1.0 }, "-=0.3")
+  .to("#branchL", { opacity: 1, duration: 0.8 }, "+=0.2")
+  .to("#branchR", { opacity: 1, duration: 0.8 }, "-=0.6")
+  .to(["#leafL","#leafC","#leafR"], { opacity: 1, duration: 0.8, stagger: 0.2 })
+  .to("#egg", { opacity: 1, duration: 0.8, y: "-=5", repeat: 1, yoyo: true }, "+=1.2")
+  .to("#egg", { opacity: 0, duration: 0.5 }, "+=0.8");
+
+// glow and label behavior
+const modules = [
+  {leaf:"#leafL", label:"#labelL"},
+  {leaf:"#leafC", label:"#labelC"},
+  {leaf:"#leafR", label:"#labelR"}
+];
+
+modules.forEach(({leaf, label}) => {
+  const leafEl = document.querySelector(leaf);
+  const labelEl = document.querySelector(label);
+  leafEl.addEventListener("mouseenter", () => {
+    gsap.to(leafEl, { scale: 1.4, duration: 0.3, transformOrigin: "center" });
+    gsap.to(labelEl, { opacity: 1, duration: 0.4 });
+    gsap.to(leafEl, { fill: "#b2ff59", duration: 0.5, repeat: 1, yoyo: true });
+  });
+  leafEl.addEventListener("mouseleave", () => {
+    gsap.to(leafEl, { scale: 1, duration: 0.3 });
+    gsap.to(labelEl, { opacity: 0, duration: 0.4 });
+  });
+});
+
+// subtle background shimmer
+gsap.to("body", {
+  backgroundPosition: "center 10px",
+  repeat: -1,
+  yoyo: true,
+  duration: 4,
+  ease: "sine.inOut"
+});
+</script>
+
+</body>
+</html>
