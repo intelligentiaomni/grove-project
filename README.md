@@ -1,160 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Grove Game Teaser v1.8 — Companions</title>
-<style>
-  body { margin:0; background:#eaf4eb; overflow:hidden; }
-  svg { display:block; margin:auto; background:#eaf4eb; }
-</style>
-</head>
-<body>
+<!-- 🌲 Grove Project Header: Interactive Banner + Preview -->
+<p align="center">
+  <!-- Clickable preview linking to live interactive banner -->
+  <a href="https://principia-lab.github.io/grove-project/docs/assets/grove-banner-v1.8.html" target="_blank">
+    <img src="docs/assets/grove-banner-v1.8.gif" alt="Grove Prototype Interactive Banner Preview" width="100%">
+  </a>
+</p>
 
-<svg viewBox="0 0 1280 720" width="1280" height="720">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="720">
-      <stop offset="0%" stop-color="#d4f0d8"/>
-      <stop offset="100%" stop-color="#b6e8c3"/>
-    </linearGradient>
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="codeOverlay" width="60" height="20" patternUnits="userSpaceOnUse">
-      <text x="0" y="14" font-family="JetBrains Mono, monospace" font-size="14" fill="#2a7a4b" opacity="0.06">
-        if(seed){grow();} // Grove
-      </text>
-    </pattern>
-  </defs>
-
-  <!-- Background -->
-  <rect width="1280" height="720" fill="url(#bg)"/>
-
-  <!-- Rothko blocks -->
-  <g id="blocks">
-    <rect x="100" y="80" width="180" height="120" fill="#b5e2c8" opacity="0.15"/>
-    <rect x="500" y="200" width="220" height="160" fill="#9fd9aa" opacity="0.12"/>
-    <rect x="900" y="100" width="200" height="180" fill="#c1f0d2" opacity="0.10"/>
-  </g>
-
-  <!-- Seed -->
-  <circle cx="640" cy="360" r="8" fill="#2a7a4b" filter="url(#softGlow)">
-    <animateTransform attributeName="transform" type="scale" values="1;1.25;1" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Glowing trail -->
-  <path id="trail" d="M500,540 C560,400 620,360 640,360 C660,360 720,400 800,540"
-        fill="none" stroke="#32cf8e" stroke-width="3" stroke-linecap="round" filter="url(#softGlow)">
-    <animate attributeName="stroke-dasharray" from="0 2000" to="2000 0" dur="6s" repeatCount="indefinite"/>
-  </path>
-
-  <!-- Nodes -->
-  <circle cx="500" cy="540" r="7" fill="#35d08c" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1s" fill="freeze"/>
-  </circle>
-
-  <!-- Code overlay -->
-  <rect width="1280" height="720" fill="url(#codeOverlay)"/>
-
-  <!-- Title -->
-  <text x="640" y="640" text-anchor="middle" font-size="36" font-weight="600" fill="#2a7a4b" opacity="0">
-    GROVE — Prototype
-    <animate attributeName="opacity" values="0;1;1;0" dur="8s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Tagline -->
-  <text x="640" y="680" text-anchor="middle" font-size="18" font-family="JetBrains Mono, monospace" fill="#2a7a4b" opacity="0">
-    "In the circuits of silence, I debug the forest within."
-    <animate attributeName="opacity" values="0;0;1;0" dur="8s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Easter Egg 0: Binary 0 → Blue Jay -->
-  <circle id="egg0" cx="650" cy="360" r="8" fill="#0d6efd" opacity="0"/>
-  <path id="birdPath" d="M650,360 Q660,350 700,300" fill="none" stroke="none"/>
-  <path id="birdShape" d="M650,360 m0,-8 a8,8 0 1,0 0,16 a8,8 0 1,0 0,-16" fill="#0d6efd" opacity="0"/>
-
-  <!-- Easter Egg 1: Companions -->
-  <g id="companions" opacity="0">
-    <!-- TARS -->
-    <g id="TARS" transform="translate(570,280)">
-      <rect x="0" y="0" width="40" height="60" fill="#666" rx="4" ry="4"/>
-      <rect x="10" y="10" width="20" height="6" fill="#0ff"/>
-      <rect x="10" y="24" width="20" height="6" fill="#0ff"/>
-    </g>
-    <!-- Pilot Shell -->
-    <g id="pilotShell" transform="translate(590,290)">
-      <path d="M0,0 Q10,-20 20,0 Q10,10 0,0" fill="none" stroke="#88eeff" stroke-width="1"/>
-      <circle cx="10" cy="-5" r="1.5" fill="#88eeff"/>
-    </g>
-  </g>
-
-  <path id="signalPath" d="M590,280 Q600,220 640,180" fill="none" stroke="none"/>
-  <circle id="spaceship" r="6" fill="#0ff" opacity="0"/>
-
-</svg>
-
-<script>
-const egg0 = document.querySelector('#egg0');
-const bird = document.querySelector('#birdShape');
-const companions = document.querySelector('#companions');
-const TARS = document.querySelector('#TARS');
-const pilot = document.querySelector('#pilotShell');
-const spaceship = document.querySelector('#spaceship');
-const signalPath = document.querySelector('#signalPath');
-
-// Easter Egg 0: Binary 0 → Blue Jay
-setTimeout(()=>{
-  egg0.setAttribute('opacity',1);
-  setTimeout(()=>{
-    egg0.setAttribute('opacity',0);
-    bird.setAttribute('opacity',1);
-    const path = document.querySelector('#birdPath');
-    const len = path.getTotalLength();
-    let start=null;
-    function fly(t){
-      if(!start) start=t;
-      const progress=(t-start)/4000;
-      if(progress<1){
-        const p = path.getPointAtLength(len*progress);
-        bird.setAttribute('transform',`translate(${p.x-650},${p.y-360})`);
-        requestAnimationFrame(fly);
-      } else bird.setAttribute('opacity',0);
-    }
-    requestAnimationFrame(fly);
-  },1000);
-},4000);
-
-// Easter Egg 1: Companions (TARS + Pilot)
-setTimeout(()=>{
-  companions.setAttribute('opacity',1);
-  spaceship.setAttribute('opacity',1);
-  const len = signalPath.getTotalLength();
-  let start=null;
-  function animateCompanions(t){
-    if(!start) start=t;
-    const progress = (t-start)/3000;
-    if(progress < 1){
-      const p = signalPath.getPointAtLength(len*progress);
-      // TARS moves along path
-      TARS.setAttribute('transform', `translate(${p.x-570},${p.y-280})`);
-      // Pilot shell follows offset
-      pilot.setAttribute('transform', `translate(${p.x-580},${p.y-270})`);
-      // Spaceship tracks signal
-      spaceship.setAttribute('cx', p.x);
-      spaceship.setAttribute('cy', p.y);
-      requestAnimationFrame(animateCompanions);
-    } else companions.setAttribute('opacity',0);
-  }
-  requestAnimationFrame(animateCompanions);
-},8000);
-
-</script>
-
-</body>
-</html>
+<p align="center">
+  <!-- Static light-mode banner -->
+  <img src="https://github.com/principia-lab/grove-project/raw/main/assets/banners/banner.svg" 
+       alt="Grove Project Light Banner" width="70%" 
+       style="display:inline-block; vertical-align:middle; margin-right:1%">
+</p>
 
 <br><br>
 
