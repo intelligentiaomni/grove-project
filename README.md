@@ -1,8 +1,12 @@
 <!-- 🌲 Grove Project Header: Banners + Badges -->
+  <p align="center">
+  <a href="https://principia-lab.github.io/grove-prototype/docs/assets/grove-banner.html" target="_blank">
+    <img src="docs/assets/demo.gif" alt="Grove Prototype Interactive Banner" width="100%">
+  </a>
 <p align="center">
-  <!-- Light + Dark Banners -->
-  <img src="https://github.com/principia-lab/grove-project/raw/main/assets/banners/banner.svg" alt="Light Banner" width="48%" style="display:inline-block; vertical-align:middle; margin-right:1%">
-  <img src="https://github.com/principia-lab/grove-project/raw/main/assets/banners/banner-dark.png" alt="Dark Banner" width="45%" style="display:inline-block; vertical-align:middle;">
+  <!-- Interactive demo banner + Light Banner -->
+  <img src="https://github.com/principia-lab/grove-project/raw/main/assets/banners/banner.svg" alt="Light Banner" width="70%" style="display:inline-block; vertical-align:middle; margin-right:1%">
+</p>
   <br><br>
 <!-- 🏷️ Shields.io Dynamic Badges -->
 <p align="center">
