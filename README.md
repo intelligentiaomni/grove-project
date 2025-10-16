@@ -1,23 +1,26 @@
 <!-- 🌲 Grove Project Header: Banners + Badges -->
 <p align="center">
-  <!-- Interactive Grove Banner -->
+  <!-- Interactive Grove Banner (demo placeholder for now) -->
   <a href="https://principia-lab.github.io/grove-project/docs/assets/grove-banner-v1.8.html" target="_blank">
-    <img src="docs/assets/demo.gif" alt="Grove Prototype Interactive Banner" width="100%">
+    <img src="https://via.placeholder.com/1280x720?text=Grove+Interactive+Demo+Coming+Soon" 
+         alt="Grove Prototype Interactive Banner" width="100%">
   </a>
 </p>
 
 <p align="center">
   <!-- Light Banner -->
-  <img src="https://github.com/principia-lab/grove-project/raw/main/assets/banners/banner.svg" alt="Light Banner" width="70%" style="display:inline-block; vertical-align:middle; margin-right:1%">
+  <img src="docs/assets/banners/banner.svg" 
+       alt="Light Banner" width="70%" 
+       style="display:inline-block; vertical-align:middle; margin-right:1%">
 </p>
-
-<br><br>
 
 <!-- 🌱 Grove Top Ten Materials Chart -->
 <p align="center">
-  <img src="docs/assets/top10_materials_grove_ecosystem_rothko.gif" alt="Top Ten Candidate Materials Grove Ecosystem" width="80%">
+  <img src="docs/assets/banners/charts/top10_materials_grove_ecosystem_rothko.gif" 
+       alt="Top Ten Candidate Materials — Grove Ecosystem (Rothko)" width="80%">
 </p>
 
+<br><br>
 
 <!-- 🏷️ Shields.io Dynamic Badges -->
 <p align="center">
