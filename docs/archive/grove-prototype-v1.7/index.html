@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+
+<script>
+  // Your Firebase config here (replace with your own from Firebase console)
+  const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+    projectId: "YOUR_PROJECT_ID",
+    appId: "YOUR_APP_ID"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grove Prototype — AI + Materials Discovery</title>
+
+  <!-- Load Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #000;
+    }
+
+    h2, h3 {
+      margin-top: 2em;
+    }
+
+    img {
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: #06c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1em;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f5f5f5;
+    }
+
+    code {
+      background-color: #f2f2f2;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    <div id="login-ui">
+  <button onclick="login()">Sign in with Google</button>
+</div>
+
+<div id="protected-content" style="display: none;">
+  <!-- Your Grove content goes here -->
+  <h1>Grove Prototype</h1>
+  <!-- etc... -->
+</div>
+
+<script>
+  const auth = firebase.auth();
+
+  function login() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithPopup(provider).catch(console.error);
+  }
+
+  function logout() {
+    auth.signOut();
+  }
+
+  auth.onAuthStateChanged(user => {
+    if (user) {
+      document.getElementById("protected-content").style.display = "block";
+      document.getElementById("login-ui").style.display = "none";
+    } else {
+      document.getElementById("protected-content").style.display = "none";
+      document.getElementById("login-ui").style.display = "block";
+    }
+  });
+</script>
+  </style>
+</head>
+<body>
+  <h1>Grove Prototype</h1>
+  <p>This prototype explores <strong>AI-augmented scientific discovery</strong> in new energy materials. Below is an AI-evaluated dataset of 50 synthetic candidate materials. Each entry includes structural, physical, and heuristic properties — and composite AI scores for ranking and exploration.</p>
+
+  <h2>Dataset Overview</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Column</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>material_id</strong></td>
+        <td>Synthetic label (e.g., Mat-001 to Mat-050). Not real compounds.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Core Physical Properties</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Column</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>band_gap_eV</strong></td>
+        <td>Electronic band gap in electron volts (eV).<br>
+          0–1 eV → conductive<br>
+          1–2 eV → semiconducting (e.g., silicon ≈ 1.1 eV)<br>
+          3+ eV → insulating
+        </td>
+      </tr>
+      <tr>
+        <td><strong>critical_temp_K</strong></td>
+        <td>Superconducting critical temperature in Kelvin.<br>
+          &lt;10 K = low / not useful, 50–100 K = interesting
+        </td>
+      </tr>
+      <tr>
+        <td><strong>ionic_conductivity_S_per_cm</strong></td>
+        <td>Ionic conductivity (log scale). Higher = better electrolyte.<br>
+          Range: 10⁻⁸ to 10⁻¹ S/cm
+        </td>
+      </tr>
+      <tr>
+        <td><strong>formation_energy_eV_per_atom</strong></td>
+        <td>Formation energy per atom. Negative = stable; Positive = unstable.</td>
+      </tr>
+      <tr>
+        <td><strong>density_g_per_cm3</strong></td>
+        <td>Mass density in g/cm³. Relevant for energy density & manufacturing.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Heuristic Scores</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Column</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>stability_score</strong></td>
