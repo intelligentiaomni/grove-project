@@ -58,34 +58,9 @@ If yes, they get to select from a list of voice + character shells, each inspire
 Voice/Shell Option
 Tone & Style
 Customization
-Zendaya-inspired character
-Curious, grounded, emotionally intelligent
-Hair, outfit, name, pronouns
-Timothée Chalamet-inspired
-Reflective, poetic, with spark of rebellion
-Eye color, voice mod
-Karl Urban (McCoy-style)
-Dry humor, skeptical scientist vibe
-Lab coat or explorer gear
-Dylan Sprouse-style coder
-Energetic, code-nerd energy
-Hoodie, gear colors
-Morgan Freeman-style voice
-Calm, wise, philosophical tone
-Voice-only or AI orb visual
-Meryl Streep-style voice
-Empathic, narrative-rich
-Classical look or abstract form
-
 
 🌱 Gameplay Layer:
-The AI guide can narrate, ask reflective questions, or help players connect the dots as they explore.
-
-
-This also creates a mentor dynamic—echoing the real-life importance of mentors in research and development.
-
-
-Later in the game, players might unlock new voices or hybrid AI styles as their understanding deepens.
+The AI guide can narrate, ask reflective questions, or help players connect the dots as they explore. This also creates a mentor dynamic—echoing the real-life importance of mentors in research and development. Later in the game, players might unlock new voices or hybrid AI styles as their understanding deepens.
 
 Users can % mix & blend to customize shells, avatars, voice 
 ```
