@@ -1,11 +1,4 @@
 <!-- 🌲 Grove Project Header: Banners + Badges -->
-<p align="center">
-  <!-- Interactive Grove Banner (demo placeholder for now) -->
-  <a href="https://principia-lab.github.io/grove-project/docs/assets/grove-banner-v1.8.html" target="_blank">
-    <img src="https://via.placeholder.com/1280x720?text=Grove+Interactive+Demo+Coming+Soon" 
-         alt="Grove Prototype Interactive Banner" width="100%">
-  </a>
-</p>
 
 <p align="center">
   <!-- Light Banner -->
@@ -22,28 +15,51 @@
 
 <br><br>
 
-<!-- 🏷️ Shields.io Dynamic Badges -->
-<p align="center">
+<!-- 🏷️ Grove Project Badges - Color Coordinated & Responsive -->
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px;">
+
+  <!-- Core project badges -->
   <a href="./">
-    <img src="https://img.shields.io/badge/status-prototype-yellowgreen?style=flat-square" alt="Status: Prototype"/>
+    <img src="https://img.shields.io/badge/status-Prototype-yellowgreen?style=for-the-badge&logoColor=white" alt="Status: Prototype"/>
   </a>
   <a href="./">
-    <img src="https://img.shields.io/badge/version-0.1.0--alpha-blueviolet?style=flat-square" alt="Version 0.1.0-alpha"/>
+    <img src="https://img.shields.io/badge/version-0.1.0--alpha-blueviolet?style=for-the-badge&logoColor=white" alt="Version 0.1.0-alpha"/>
   </a>
   <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square" alt="License: MIT"/>
+    <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge&logoColor=white" alt="License: MIT"/>
   </a>
-  <a href="https://github.com/principia-lab/grove-prototype/issues">
-    <img src="https://img.shields.io/github/issues/principia-lab/grove-prototype?style=flat-square" alt="GitHub Issues"/>
+
+  <!-- Spacer for visual grouping -->
+  <span style="flex-basis: 100%; height: 6px;"></span>
+
+  <!-- AI-related badges -->
+  <a href="./sora-demo">
+    <img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=for-the-badge&logoColor=white" alt="Grove AI"/>
+  </a>
+  <a href="./sora-demo">
+    <img src="https://img.shields.io/badge/Sora-Demo-purple?style=for-the-badge&logoColor=white" alt="Sora Demo"/>
+  </a>
+  <a href="./sora-demo">
+    <img src="https://img.shields.io/badge/Multi--Agent-enabled-orange?style=for-the-badge&logoColor=white" alt="Multi-Agent"/>
+  </a>
+
+  <!-- Spacer -->
+  <span style="flex-basis: 100%; height: 6px;"></span>
+
+  <!-- Phase & Guardrails badges -->
+  <a href="./">
+    <img src="https://img.shields.io/badge/Phase-Research-blue?style=for-the-badge&logoColor=white" alt="Research Phase"/>
   </a>
   <a href="./">
-    <img src="https://img.shields.io/badge/language-Python-3572A5.svg?style=flat-square" alt="Language: Python"/>
+    <img src="https://img.shields.io/badge/Guardrails-passed-brightgreen?style=for-the-badge&logoColor=white" alt="Guardrails"/>
   </a>
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=flat-square" alt="Grove AI"/>
-  <img src="https://img.shields.io/badge/Phase-Research%20Prototype-blue?style=flat-square" alt="Research Phase"/>
-</p>
+
+  <!-- Optional Lab Verified badge -->
+  <a href="./verification.md">
+    <img src="https://img.shields.io/badge/Lab-Verified-brightgreen?style=for-the-badge&logoColor=white" alt="Lab Verified"/>
+  </a>
+</div>
+
 
 ---
 

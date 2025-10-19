@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Grove World — Energy Materials Discovery</title>
+<style>
+/* === Base layout === */
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #e0f7ff;
+  color: #0ff;
+}
+header {
+  text-align: center;
+  padding: 10px;
+  background: #a0ffd0;
+  color: #003366;
+}
+#world-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  transition: background 5s linear;
+}
+.hidden { display: none; }
+
+/* === Start Screen === */
+#start-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #004455;
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 1.5s ease;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+}
+#start-screen h1 {
+  font-size: 2rem;
+  color: #006666;
+  text-shadow: 0 0 15px #a0ffff;
+  margin-bottom: 0.5em;
+}
+#start-screen p {
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #004444;
+  margin-bottom: 1.2em;
+}
+#start-screen button {
+  background: linear-gradient(90deg, #00ffee, #00ccff);
+  color: #003344;
+  font-size: 1.2rem;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 2em;
+  box-shadow: 0 0 15px #00ffee;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#start-screen button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #00ffff;
+}
+.fade-out {
+  animation: dissolveOut 1.6s forwards;
+}
+@keyframes dissolveOut {
+  0% { opacity: 1; filter: blur(0px); }
+  60% { opacity: 0.7; filter: blur(6px); }
+  100% { opacity: 0; filter: blur(12px); }
+}
+
+/* === Grove world visuals === */
+#sky {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #a0fff0 0%, #e0f7ff 100%);
+  filter: brightness(1.1);
+}
+.cloud {
+  position: absolute;
+  background: #c0fff0;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: floatCloud linear infinite;
+}
+@keyframes floatCloud {
+  0% { transform: translateX(-200px); }
+  100% { transform: translateX(110vw); }
+}
+#ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, #a0ffc0 0%, #c0ffe0 100%);
+}
+.island {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  background: linear-gradient(to top, #80ffb0, #b0fff0);
+  border-radius: 50%;
+  box-shadow: 0 0 20px #80ffe0;
+  animation: spiralFloat 12s ease-in-out infinite;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.island:hover {
+  transform: scale(1.15) rotate(3deg);
+  box-shadow: 0 0 25px #00ffee;
+}
+@keyframes spiralFloat {
+  0%,100% { transform: translate(0,0) rotate(0deg); }
+  25% { transform: translate(10px,-10px) rotate(5deg); }
+  50% { transform: translate(20px,5px) rotate(10deg); }
+  75% { transform: translate(10px,15px) rotate(5deg); }
+}
+.ai, .blue-whale, .squid, .nautilus {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ai {
+  width: 70px; height: 70px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAF0lEQVR42u3BAQ0AAADCoPdPbQ43oAAAAAAAAAB4G0IWAAEEa6u+AAAAAElFTkSuQmCC');
+  filter: drop-shadow(0 0 15px #0ff);
+}
+.blue-whale {
+  width: 120px; height: 60px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABACAYAAAB/Fi5mAAAAF0lEQVR42u3BAQEAAACCoPdPbQ43oAAAAAAAAAAAB4FoMkAAH+3Z9NAAAAAElFTkSuQmCC');
+  animation: swimWhale 8s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 15px #00ccff);
+}
+@keyframes swimWhale {
+  0%,100% { transform: translate(0,0) rotate(0deg); }
+  50% { transform: translate(20px,-10px) rotate(-2deg); }
+}
+.squid {
+  width: 40px; height: 40px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAF0lEQVR42u3BAQEAAACCoPdPbQ43oAAAAAAAAAAAB4GMIUAAEwMyFvAAAAAElFTkSuQmCC');
+  animation: swimSquid 5s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 10px #00ffcc);
+}
+@keyframes swimSquid {
+  0%,100% { transform: translate(0,0) rotate(0deg); }
+  50% { transform: translate(-15px,10px) rotate(5deg); }
+}
+.nautilus {
+  width: 60px; height: 60px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAFUlEQVR42u3BMQEAAADCoPdPbQ43oAAAAAAAAAD4Hc8UAAEP8BdoAAAAASUVORK5CYII=');
+  animation: float 6s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 12px #00ffee);
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #0ff;
+  border-radius: 50%;
+  opacity: 0.6;
+  pointer-events: none;
+  animation: floatParticle linear infinite;
+}
+@keyframes floatParticle {
+  0% { transform: translateY(0) translateX(0); opacity: 0.5; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(-200px) translateX(20px); opacity: 0; }
+}
+#world-message {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  text-align: center;
+  font-size: 20px;
+  color: #00ffee;
+  text-shadow: 0 0 10px #00ffff;
+}
+</style>
+</head>
+<body>
+<header><h1>Grove World — Energy Materials Discovery</h1></header>
+<main>
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <h1>🌱 Welcome to Grove World</h1>
+    <p>Explore energy materials, perovskite nanocrystals, and circular discovery trails.</p>
+    <button id="start-btn">▶️ Start Grove World</button>
+  </div>
+
+  <div id="world-container" class="hidden">
+    <div id="sky"></div>
+    <div id="ground"></div>
+    <div id="animation-scene"></div>
+    <p id="world-message"></p>
+  </div>
+
+  <!-- Audio placeholders -->
+  <audio id="bg-sound" loop muted>
+    <source src="data:audio/mp3;base64,//uQxAAAAAAAAAAAAAAAAAAAAAA..." type="audio/mpeg">
+  </audio>
+  <audio id="click-sound">
+    <source src="data:audio/mp3;base64,//uQxAAAAAAAAAAAAAAAAAAAAAA..." type="audio/mpeg">
+  </audio>
+  <audio id="whale-sound">
+    <source src="data:audio/mp3;base64,//uQxAAAAAAAAAAAAAAAAAAAAAA..." type="audio/mpeg">
+  </audio>
+</main>
+
+<script>
+/* === Grove World Logic === */
+const worldContainer = document.getElementById('world-container');
+const animationScene = document.getElementById('animation-scene');
+const worldMessage = document.getElementById('world-message');
+const sky = document.getElementById('sky');
+const bgSound = document.getElementById('bg-sound');
+const clickSound = document.getElementById('click-sound');
+const whaleSound = document.getElementById('whale-sound');
+
+function generateClouds(num=6){
+  for(let i=0;i<num;i++){
+    const c=document.createElement('div');
+    c.className='cloud';
+    c.style.width=`${50+Math.random()*120}px`;
+    c.style.height=`${30+Math.random()*60}px`;
+    c.style.top=`${Math.random()*50}%`;
+    c.style.left=`${-200-Math.random()*300}px`;
+    c.style.animationDuration=`${25+Math.random()*35}s`;
+    sky.appendChild(c);
+  }
+}
+function generateIslands(num=3){
+  for(let i=0;i<num;i++){
+    const isl=document.createElement('div');
+    isl.className='island';
+    isl.style.left=`${20+Math.random()*70}%`;
+    isl.style.bottom=`${15+Math.random()*30}%`;
+    animationScene.appendChild(isl);
+    isl.addEventListener('click',()=>{
+      clickSound.currentTime=0; clickSound.play();
+      worldMessage.textContent="⚡ Material Insight: Perovskite nanocrystal efficiency ↑";
+    });
+  }
+}
+function spawnAI(){const ai=document.createElement('div');ai.className='ai';ai.style.left='40%';ai.style.bottom='30%';animationScene.appendChild(ai);}
+function spawnBlueWhale(){const w=document.createElement('div');w.className='blue-whale';w.style.left='60%';w.style.bottom='25%';animationScene.appendChild(w);setInterval(()=>{whaleSound.currentTime=0;whaleSound.play();},8000);}
+function spawnNautilus(){const n=document.createElement('div');n.className='nautilus';n.style.left='20%';n.style.bottom='40%';animationScene.appendChild(n);}
+function spawnSquids(num=2){for(let i=0;i<num;i++){const s=document.createElement('div');s.className='squid';s.style.left=`${10+Math.random()*80}%`;s.style.bottom=`${20+Math.random()*40}%`;animationScene.appendChild(s);}}
+function generateParticles(num=50){for(let i=0;i<num;i++){const p=document.createElement('div');p.className='particle';p.style.left=`${Math.random()*100}%`;p.style.bottom=`${Math.random()*100}%`;p.style.animationDuration=`${5+Math.random()*5}s`;animationScene.appendChild(p);}}
+
+function launchGroveWorld(){
+  worldContainer.classList.remove('hidden');
+  generateClouds(8);
+  generateIslands(3);
+  spawnAI();
+  spawnBlueWhale();
+  spawnNautilus();
+  spawnSquids(2);
+  generateParticles(50);
+}
+
+/* === Easter Egg System === */
+const groveEasterEggs=[
+  {message:"🌱 404 Curiosity Found — uncertainty recycled into insight!",color:"#00ffee",sound:"chime",effect:"sparkle"},
+  {message:"☕ Turning lion’s-mane chaga into code.",color:"#80fff0",sound:"ping",effect:"floatText"},
+  {message:"⚡ New perovskite pathway unlocked!",color:"#00ffcc",sound:"whale",effect:"energyWave"}
+];
+function playEggSound(t){const m={chime:clickSound,ping:bgSound,whale:whaleSound};if(m[t]){m[t].currentTime=0;m[t].play();}}
+function triggerEggEffect(t,color){
+  if(t==="sparkle"){for(let i=0;i<20;i++){const p=document.createElement("div");p.className="particle";p.style.background=color;p.style.left=`${50+Math.random()*20-10}%`;p.style.bottom=`${50+Math.random()*20-10}%`;p.style.animationDuration=`${2+Math.random()*2}s`;animationScene.appendChild(p);setTimeout(()=>p.remove(),3000);}}
+  if(t==="floatText"){const text=document.createElement("div");text.textContent="console.log('Hello Grove!')";text.style.position="absolute";text.style.left="45%";text.style.bottom="55%";text.style.color=color;text.style.fontSize="18px";animationScene.appendChild(text);setTimeout(()=>text.remove(),3000);}
+  if(t==="energyWave"){worldContainer.style.transition="background 1s ease";worldContainer.style.background="radial-gradient(circle,#b0fff0 0%,#e0f7ff 100%)";setTimeout(()=>worldContainer.style.background="#e0f7ff",2000);}
+}
+function triggerEasterEgg(){const e=groveEasterEggs[Math.floor(Math.random()*groveEasterEggs.length)];worldMessage.textContent=e.message;worldMessage.style.color=e.color;playEggSound(e.sound);triggerEggEffect(e.effect,e.color);}
+document.addEventListener("keydown",e=>{if(e.key.toLowerCase()==="g")triggerEasterEgg();});
+worldContainer.addEventListener("click",()=>{if(Math.random()<0.15)triggerEasterEgg();});
+setInterval(()=>{if(Math.random()<0.1)triggerEasterEgg();},8000);
+
+/* === Start Button Logic === */
+const startScreen=document.getElementById("start-screen");
+const startBtn=document.getElementById("start-btn");
+startBtn.addEventListener("click",()=>{
+  startScreen.classList.add("fade-out");
+  setTimeout(()=>startScreen.style.display="none",1600);
+  bgSound.muted=false;
+  bgSound.play().catch(()=>console.warn("Autoplay blocked; waiting for user interaction."));
+  launchGroveWorld();
+});
+</script>
+</body>
+</html>
