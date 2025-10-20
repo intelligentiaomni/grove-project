@@ -184,7 +184,7 @@ Long-term development connects discovery modules to simulated economic and civil
 
 ---
 
-## 🤝 Contributing
+## 🧱 Contributing
 
 This is early-stage and exploratory. Ideas, feedback, or collaboration → open an issue or PR.
 
