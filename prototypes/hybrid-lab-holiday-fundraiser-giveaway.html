@@ -1,5 +1,66 @@
 <!-- 🌲 Grove presents: Hybrid Lab Holiday Fundraiser & Giveaway 🌲-->
-<div align="center" style="max-width:700px; margin:auto; font-family:Inter, sans-serif; line-height:1.6;">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #fefefe;
+  }
+
+  .grove-banner {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    text-align: center;
+    font-family: Inter, system-ui, sans-serif;
+    line-height: 1.6;
+    position: relative;
+    background: linear-gradient(180deg, #ffffff 0%, #fff9f2 50%, #f6f8ff 100%);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(200, 230, 255, 0.5);
+  }
+
+  .grove-banner::before {
+    content: "✨";
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 1.2rem;
+    animation: twinkle 3s infinite ease-in-out alternate;
+  }
+
+  .grove-banner::after {
+    content: "✨";
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 1.2rem;
+    animation: twinkle 3s infinite ease-in-out alternate-reverse;
+  }
+
+  @keyframes twinkle {
+    from { opacity: 0.3; transform: scale(0.9) rotate(0deg); }
+    to { opacity: 1; transform: scale(1.1) rotate(15deg); }
+  }
+
+  h1.grove-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #223344;
+  }
+
+  h1.grove-title span {
+    color: #2b7a2b;
+    text-shadow: 0 0 6px rgba(43, 122, 43, 0.2);
+  }
+</style>
+
+<div class="grove-banner">
+  <h1 class="grove-title">
+    🌲 <span>Grove</span> presents: Hybrid Lab Holiday Fundraiser & Giveaway 🌲
+  </h1>
+</div>
 
   <h2>🎁 Hybrid Lab Holiday Fundraiser & Giveaway Event 🎁</h2>
   <div id="holiday-demo"></div>
