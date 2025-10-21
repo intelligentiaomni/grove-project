@@ -1,23 +1,27 @@
-<!-- 🌲 Grove Project Header: Banners + Badges -->
+<!-- 🌲 Grove Project Header: NEW! Banner + Chart + Badges (Responsive) -->
 
 <p align="center">
-  <!-- Light Banner -->
-  <img src="docs/assets/banners/banner.svg" 
-       alt="Light Banner" width="70%" 
-       style="display:inline-block; vertical-align:middle; margin-right:1%">
+  <strong>🎉 NEW! 🌲 Hybrid Lab Holiday Fundraiser & Giveaway 🌲 🎁</strong>
+</p>
+
+<p align="center">
+  <!-- Light Banner (responsive) -->
+  <img src="assets/banners/banner.svg" 
+       alt="Light Banner" 
+       style="width:90%; max-width:1000px; height:auto; display:inline-block; vertical-align:middle;">
 </p>
 
 <!-- 🌱 Grove Top Ten Materials Chart -->
 <p align="center">
-  <img src="docs/assets/banners/charts/top10_materials_grove_ecosystem_rothko.gif" 
-       alt="Top Ten Candidate Materials — Grove Ecosystem (Rothko)" width="80%">
+  <img src="assets/charts/top10_materials_grove_ecosystem_rothko.gif" 
+       alt="Top Ten Candidate Materials — Grove Ecosystem (Rothko)" 
+       style="width:80%; max-width:900px; height:auto;">
 </p>
 
-<br><br>
+<br>
 
-<!-- 🏷️ Grove Project Badges - Color Coordinated & Responsive -->
-<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px;">
-
+<!-- 🏷️ Grove Project Badges -->
+<p align="center">
   <!-- Core project badges -->
   <a href="./">
     <img src="https://img.shields.io/badge/status-Prototype-yellowgreen?style=for-the-badge&logoColor=white" alt="Status: Prototype"/>
@@ -29,37 +33,28 @@
     <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge&logoColor=white" alt="License: MIT"/>
   </a>
 
-  <!-- Spacer for visual grouping -->
-  <span style="flex-basis: 100%; height: 6px;"></span>
-
-  <!-- AI-related badges -->
-  <a href="./sora-demo">
-    <img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=for-the-badge&logoColor=white" alt="Grove AI"/>
+  <!-- JS & CSS badges -->
+  <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
   </a>
-  <a href="./sora-demo">
-    <img src="https://img.shields.io/badge/Sora-Demo-purple?style=for-the-badge&logoColor=white" alt="Sora Demo"/>
-  </a>
-  <a href="./sora-demo">
-    <img src="https://img.shields.io/badge/Multi--Agent-enabled-orange?style=for-the-badge&logoColor=white" alt="Multi-Agent"/>
+  <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
+    <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
   </a>
 
   <!-- Spacer -->
   <span style="flex-basis: 100%; height: 6px;"></span>
 
-  <!-- Phase & Guardrails badges -->
-  <a href="./">
-    <img src="https://img.shields.io/badge/Phase-Research-blue?style=for-the-badge&logoColor=white" alt="Research Phase"/>
+  <!-- Demo / Fundraiser badges -->
+  <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
+    <img src="https://img.shields.io/badge/View-Demo-ff6f61?style=for-the-badge" alt="View Demo"/>
   </a>
-  <a href="./">
-    <img src="https://img.shields.io/badge/Guardrails-passed-brightgreen?style=for-the-badge&logoColor=white" alt="Guardrails"/>
+  <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
+    <img src="https://img.shields.io/badge/Enter-Giveaway-ffd700?style=for-the-badge" alt="Enter Giveaway"/>
   </a>
-
-  <!-- Optional Lab Verified badge -->
-  <a href="./verification.md">
-    <img src="https://img.shields.io/badge/Lab-Verified-brightgreen?style=for-the-badge&logoColor=white" alt="Lab Verified"/>
+  <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
+    <img src="https://img.shields.io/badge/Fundraiser-Info-1e90ff?style=for-the-badge" alt="Fundraiser Info"/>
   </a>
-</div>
-
+</p>
 
 ---
 
