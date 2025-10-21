@@ -1,7 +1,19 @@
-<!-- 🎁 Hybrid Lab Holiday Fundraiser & Giveaway -->
+<!-- 🌲 Grove presents: Hybrid Lab Holiday Fundraiser & Giveaway 🌲-->
 <div align="center" style="max-width:700px; margin:auto; font-family:Inter, sans-serif; line-height:1.6;">
 
-  <h2>🎁 Hybrid Lab Holiday Fundraiser & Giveaway</h2>
+  <h2>🎁 Hybrid Lab Holiday Fundraiser & Giveaway Event 🎁</h2>
+  <div id="holiday-demo"></div>
+  <script>
+  fetch('holiday-demo.html')
+    .then(response => {
+      if (!response.ok) throw new Error('Cannot load giveaway HTML');
+      return response.text();
+    })
+    .then(html => {
+      document.getElementById('holiday-demo').innerHTML = html;
+    })
+    .catch(err => console.error(err));
+</script>
   <p><em>A science-backed experiment in open support for independent AI research</em></p>
 
   <h3>💡 Overview</h3>
