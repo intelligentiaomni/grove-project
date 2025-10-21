@@ -1,4 +1,4 @@
-<!-- 🌲 Grove Project Header: NEW! Banner + Chart + Badges (Responsive) -->
+<!-- 🌲 Grove Project Header: NEW! Banner + Chart + All Badges -->
 
 <p align="center">
   <strong>🎉 NEW! 🌲 Hybrid Lab Holiday Fundraiser & Giveaway 🌲 🎁</strong>
@@ -20,39 +20,39 @@
 
 <br>
 
-<!-- 🏷️ Grove Project Badges -->
+<!-- 🏷️ Core Project Badges -->
 <p align="center">
-  <!-- Core project badges -->
   <a href="./">
-    <img src="https://img.shields.io/badge/status-Prototype-yellowgreen?style=for-the-badge&logoColor=white" alt="Status: Prototype"/>
+    <img src="https://img.shields.io/badge/status-Prototype-yellowgreen?style=for-the-badge&logoColor=white" alt="Status: Prototype" height="28"/>
   </a>
   <a href="./">
-    <img src="https://img.shields.io/badge/version-0.1.0--alpha-blueviolet?style=for-the-badge&logoColor=white" alt="Version 0.1.0-alpha"/>
+    <img src="https://img.shields.io/badge/version-0.1.0--alpha-blueviolet?style=for-the-badge&logoColor=white" alt="Version 0.1.0-alpha" height="28"/>
   </a>
   <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge&logoColor=white" alt="License: MIT"/>
+    <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge&logoColor=white" alt="License: MIT" height="28"/>
   </a>
 
   <!-- JS & CSS badges -->
   <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="28">
   </a>
   <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
-    <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
+    <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" height="28">
   </a>
+</p>
 
-  <!-- Spacer -->
-  <span style="flex-basis: 100%; height: 6px;"></span>
+<br>
 
-  <!-- Demo / Fundraiser badges -->
+<!-- 🏷️ Demo / Fundraiser Badges -->
+<p align="center">
   <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
-    <img src="https://img.shields.io/badge/View-Demo-ff6f61?style=for-the-badge" alt="View Demo"/>
+    <img src="https://img.shields.io/badge/View-Demo-ff6f61?style=for-the-badge" alt="View Demo" height="28"/>
   </a>
   <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
-    <img src="https://img.shields.io/badge/Enter-Giveaway-ffd700?style=for-the-badge" alt="Enter Giveaway"/>
+    <img src="https://img.shields.io/badge/Enter-Giveaway-ffd700?style=for-the-badge" alt="Enter Giveaway" height="28"/>
   </a>
   <a href="https://principia-lab.github.io/grove-project/prototypes/hybrid-lab-holiday-fundraiser-giveaway.html">
-    <img src="https://img.shields.io/badge/Fundraiser-Info-1e90ff?style=for-the-badge" alt="Fundraiser Info"/>
+    <img src="https://img.shields.io/badge/Fundraiser-Info-1e90ff?style=for-the-badge" alt="Fundraiser Info" height="28"/>
   </a>
 </p>
 
