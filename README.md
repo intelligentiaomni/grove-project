@@ -8,23 +8,23 @@
 
 <!-- 🌿 Tufte-style Tradeoff Chart -->
 <p align="center">
-  <img src="assets/charts/tufte_tradeoff_chart.gif" 
+  <img src="assets/tufte_tradeoff_chart.gif" 
        alt="Top Materials — Tufte-style Tradeoff Chart" 
        style="width:80%; max-width:850px; height:auto;">
 </p>
 <p align="center">
-  <video src="assets/charts/tufte_tradeoff_chart.mp4" controls 
+  <video src="assets/tufte_tradeoff_chart.mp4" controls 
          style="width:80%; max-width:850px; height:auto;"></video>
 </p>
 
 <!-- 🌟 Future Rothko-style / Sora Demo Placeholder -->
 <p align="center">
-  <img src="assets/charts/placeholder_rothko_demo.png" 
+  <img src="assets/placeholder_rothko_demo.png" 
        alt="Future Rothko-style Demo Placeholder" 
        style="width:80%; max-width:850px; height:auto;">
 </p>
 <p align="center">
-  <video src="assets/charts/placeholder_rothko_demo.mp4" controls 
+  <video src="assets/placeholder_rothko_demo.mp4" controls 
          style="width:80%; max-width:850px; height:auto;"></video>
 </p>
 
