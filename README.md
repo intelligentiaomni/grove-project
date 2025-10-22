@@ -109,6 +109,8 @@
 
 #### Grove Project Lab Notebook
 
+[![Launch Lab](https://img.shields.io/badge/Launch%20Lab-🚀-green)](https://colab.research.google.com/github/principia-lab/grove-prototype/blob/main/notebooks/YourNotebook.ipynb)
+
 | 🧮 **Jupyter NBViewer** | [Open in NBViewer](https://nbviewer.org/github/principia-lab/grove-project/blob/main/grove_lab_notebook.ipynb)                                                                        |
 | ☁️ **Google Colab**     | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/principia-lab/grove-project/blob/main/grove_lab_notebook.ipynb) |
 | 🧠 **Repository**       | [View on GitHub](https://github.com/principia-lab/grove-project/blob/main/grove_lab_notebook.ipynb)                                                                                   |
