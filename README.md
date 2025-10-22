@@ -107,7 +107,7 @@
 
 ---
 
-### NEW! Hybrid Lab Holiday Fundraiser & Giveaway
+#### NEW! Hybrid Lab Holiday Fundraiser & Giveaway
 
 **[🎁 Click here to visit the Holiday Demo!](https://principia-lab.github.io/holiday-demo/)**
 
@@ -214,7 +214,7 @@ AI returns top candidate materials with reasoning and trade-off plots.
 
 ## 📓 Logbook
 
-> Reflection: One thing realized while building this, **the correspondence layer Sprint Logger for transmission is itself a prototype.**  
+> One thing realized while building this, **the correspondence layer Sprint Logger for transmission is itself a prototype.**  
 > Why? Transmitting insight, testing resonance, framing experiments, and attracting collaborators, also applicable outside lab.
 
 ---
