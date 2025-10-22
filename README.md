@@ -74,15 +74,22 @@
 
   <span style="flex-basis: 100%; height: 4px;"></span>
 
-  <!-- JS/CSS badges pointing to Holiday Demo -->
-  <a href="https://principia-lab.github.io/holiday-demo/">
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="20">
-  </a>
-  <a href="https://principia-lab.github.io/holiday-demo/">
-    <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" height="20">
-  </a>
+  <!-- JS/CSS/Python/Jupyter badges -->
+<a href="https://principia-lab.github.io/holiday-demo/">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="20">
+</a>
+<a href="https://principia-lab.github.io/holiday-demo/">
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" height="20">
+</a>
+<a href="assets/tufte_tradeoff_chart.mp4">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Tufte Chart" height="20">
+</a>
+<a href="assets/tufte_tradeoff_chart.mp4">
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Tufte Chart" height="20">
+</a>
 
-  <span style="flex-basis: 100%; height: 4px;"></span>
+<span style="flex-basis: 100%; height: 4px;"></span>
+
 
   <!-- Demo / Fundraiser badges -->
   <a href="https://principia-lab.github.io/holiday-demo/">
