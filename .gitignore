@@ -1,0 +1,23 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment folders
+venv/
+env/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore export files
+top_candidates.csv
+tradeoff_chart.png
+annotations.csv
+
+# Optional: ignore large local files (CAD backups)
+*.stl
+*.obj
