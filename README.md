@@ -100,9 +100,9 @@
 
 ---
 
-# NEW! 🌲 Hybrid Lab Holiday Fundraiser & Giveaway 🌲 🎁
+## NEW! Hybrid Lab Holiday Fundraiser & Giveaway
 
-**[🎁 Click here to visit the Holiday Demo! 🎁](https://principia-lab.github.io/holiday-demo/)**
+**[🎁 Click here to visit the Holiday Demo! ](https://principia-lab.github.io/holiday-demo/)**
 
 ---
 
