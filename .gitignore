@@ -18,6 +18,9 @@ top_candidates.csv
 tradeoff_chart.png
 annotations.csv
 
+# Ignore temporary/test notebooks
+test_notebook.ipynb
+
 # Optional: ignore large local files (CAD backups)
 *.stl
 *.obj
