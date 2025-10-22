@@ -8,7 +8,7 @@
 
 <!-- 🌱 Grove Hackathon Demo Notice -->
 <p align="center" style="font-size:0.9em; color:#555;">
-  This section showcases charts and placeholders for the Grove Hackathon demo. Content may be updated as new demos become available.
+  This section showcases charts and placeholders for the Grove Hackathon demo. 
 </p>
 
 <!-- 🌿 Tufte-style Tradeoff Chart -->
@@ -21,8 +21,10 @@
   <video src="assets/charts/tufte_tradeoff_chart.mp4" controls 
          style="width:80%; max-width:850px; height:auto;"></video>
 </p>
-<p align="center" style="font-size:0.9em; color:#555;">
-  Tufte-style tradeoff chart showing top candidate materials.
+<p align="center">
+  <img src="assets/charts/tufte_tradeoff_chart.gif" 
+       alt="Top Materials — Tufte-style Tradeoff Chart" 
+       style="width:80%; max-width:850px; height:auto;">
 </p>
 
 <!-- 🌟 Future Rothko-style / Sora Demo Placeholder -->
