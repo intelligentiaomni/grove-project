@@ -1,17 +1,37 @@
 <!-- 🌲 Grove Project Header: Banners + Badges -->
 
 <p align="center">
-  <!-- Light Banner (responsive) -->
   <img src="assets/banners/banner.svg" 
        alt="Light Banner" 
        style="width:95%; max-width:1200px; height:auto; display:inline-block; vertical-align:middle;">
 </p>
 
-<!-- 🌱 Grove Top Ten Materials Chart -->
+<!-- 🌿 Tufte-style Tradeoff Chart -->
+<h3 align="center">Tufte-style Tradeoff Chart</h3>
 <p align="center">
-  <img src="assets/charts/top10_materials_grove_ecosystem_rothko.gif" 
-       alt="Top Ten Candidate Materials — Grove Ecosystem (Rothko)" 
-       style="width:85%; max-width:900px; height:auto;">
+  <!-- GIF preview -->
+  <img src="assets/tufte_tradeoff_chart.gif" 
+       alt="Tufte Tradeoff Chart" 
+       style="width:80%; max-width:850px; height:auto;">
+</p>
+<p align="center">
+  <!-- MP4 video -->
+  <video src="assets/tufte_tradeoff_chart.mp4" controls 
+         style="width:80%; max-width:850px; height:auto;"></video>
+</p>
+
+<!-- 🌟 Future Rothko-style Presentation / Sora Demo -->
+<h3 align="center">Future Rothko-style Presentation / Sora Demo</h3>
+<p align="center">
+  <!-- Placeholder image -->
+  <img src="assets/charts/placeholder_rothko_demo.png" 
+       alt="Future Rothko-style Demo Placeholder" 
+       style="width:80%; max-width:850px; height:auto;">
+</p>
+<p align="center">
+  <!-- Placeholder video -->
+  <video src="assets/charts/placeholder_rothko_demo.mp4" controls 
+         style="width:80%; max-width:850px; height:auto;"></video>
 </p>
 
 <br><br>
