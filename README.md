@@ -107,9 +107,9 @@
 
 ---
 
-## NEW! Hybrid Lab Holiday Fundraiser & Giveaway
+### NEW! Hybrid Lab Holiday Fundraiser & Giveaway
 
-**[🎁 Click here to visit the Holiday Demo! 🎁](https://principia-lab.github.io/holiday-demo/)**
+**[🎁 Click here to visit the Holiday Demo!](https://principia-lab.github.io/holiday-demo/)**
 
 ---
 
@@ -148,25 +148,25 @@ The **Grove Project** unifies AI module to leverage scientific discovery.
 
 ## 🛠 TL;DR Modular Hub
 
-Hub Functions as Central dashboard + API → all prototypes feed into one “front door”
+Hub Functions as **Central dashboard + API** → all prototypes feed into one “front door”
 
-Early modules (Phase 1) → concrete ROI, tangible results
+Early **modules** (Phase 1) → concrete ROI, tangible results
 
-Intermediate modules (Phase 2) → hypothesis generation, multi-modal reasoning
+Intermediate modules (Phase 2) → hypothesis generation, **multi-modal reasoning**
 
-Long-term modules (Phase 3) → meta-level prioritization, cognitive modeling
+**Long-term modules** (Phase 3) → meta-level prioritization, cognitive modeling
 
 ---
 
 ## 💡 AI New energy materials discovery
 
-This prototype explores how scientists can discover new materials critical for energy applications, such as quantum superconductors, semiconductors, energy-transmission systems, solar, hydrogen, climate-resilient polymers, catalysts, and solid-state batteries, using multi-agent AI models and physics-informed reasoning, hypothesis development, structured experiments, and lab automation, bridging computational insight with experimental potential. 
+This prototype explores how scientists can discover new materials critical for energy applications, such as quantum superconductors, semiconductors, energy-transmission systems, solar, hydrogen, climate-resilient polymers, catalysts, and solid-state batteries, using multi-agent AI models and physics-informed reasoning, hypothesis development, structured experiments, and lab automation, **bridging computational insight with experimental potential**. 
 
-Goal 
+**Goal**
 
 To help researchers rapidly identify top candidate materials in energy systems to ensure improved infrastructure. 
 
-Why 
+**Why** 
 
 - **Concrete, high-impact domain with vast datasets and clear real-world stakes**
 - **Relatively developed experimental data and pipelines to integrate AI tools**
@@ -176,7 +176,7 @@ Why
 
 “By combining deep reasoning and specialist agents, dynamic AI lab partners, and insight engines, we nurture early minds to become autonomous researchers equipped with critical thinking skills rooted in evidence.”
 
-Example Use Case
+**Example Use Case**
 
 Input constraints → conductivity, stability, cost →  
 AI returns top candidate materials with reasoning and trade-off plots.
@@ -214,8 +214,8 @@ AI returns top candidate materials with reasoning and trade-off plots.
 
 ## 📓 Logbook
 
-> Reflection: One thing realized while building this — **the correspondence layer, i.e. Sprint Logger for transmission, is itself a prototype.**  
-> It transmits insight, tests resonance, frames experiments, and attracts collaborators, also applicable outside lab.
+> Reflection: One thing realized while building this, **the correspondence layer Sprint Logger for transmission is itself a prototype.**  
+> Why? Transmitting insight, testing resonance, framing experiments, and attracting collaborators, also applicable outside lab.
 
 ---
 
