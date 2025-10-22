@@ -6,32 +6,37 @@
        style="width:95%; max-width:1200px; height:auto; display:inline-block; vertical-align:middle;">
 </p>
 
+<!-- 🌱 Grove Hackathon Demo Notice -->
+<p align="center" style="font-size:0.9em; color:#555;">
+  This section showcases charts and placeholders for the Grove Hackathon demo. Content may be updated as new demos become available.
+</p>
+
 <!-- 🌿 Tufte-style Tradeoff Chart -->
-<h3 align="center">Tufte-style Tradeoff Chart</h3>
 <p align="center">
-  <!-- GIF preview -->
-  <img src="assets/tufte_tradeoff_chart.gif" 
-       alt="Tufte Tradeoff Chart" 
+  <img src="assets/charts/tufte_tradeoff_chart.gif" 
+       alt="Top Materials — Tufte-style Tradeoff Chart" 
        style="width:80%; max-width:850px; height:auto;">
 </p>
 <p align="center">
-  <!-- MP4 video -->
-  <video src="assets/tufte_tradeoff_chart.mp4" controls 
+  <video src="assets/charts/tufte_tradeoff_chart.mp4" controls 
          style="width:80%; max-width:850px; height:auto;"></video>
 </p>
+<p align="center" style="font-size:0.9em; color:#555;">
+  Tufte-style tradeoff chart showing top candidate materials.
+</p>
 
-<!-- 🌟 Future Rothko-style Presentation / Sora Demo -->
-<h3 align="center">Future Rothko-style Presentation / Sora Demo</h3>
+<!-- 🌟 Future Rothko-style / Sora Demo Placeholder -->
 <p align="center">
-  <!-- Placeholder image -->
   <img src="assets/charts/placeholder_rothko_demo.png" 
        alt="Future Rothko-style Demo Placeholder" 
        style="width:80%; max-width:850px; height:auto;">
 </p>
 <p align="center">
-  <!-- Placeholder video -->
   <video src="assets/charts/placeholder_rothko_demo.mp4" controls 
          style="width:80%; max-width:850px; height:auto;"></video>
+</p>
+<p align="center" style="font-size:0.9em; color:#555;">
+  Placeholder for the future Rothko-style presentation / Sora demo, to be showcased during the Grove Hackathon.
 </p>
 
 <br><br>
