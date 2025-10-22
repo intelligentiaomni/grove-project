@@ -27,6 +27,7 @@
   <video src="assets/charts/placeholder_rothko_demo.mp4" controls 
          style="width:80%; max-width:850px; height:auto;"></video>
 </p>
+
 <br><br>
 
 <!-- 🏷️ Grove Project Badges - Color Coordinated & Responsive -->
