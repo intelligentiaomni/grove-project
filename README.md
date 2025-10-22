@@ -6,11 +6,6 @@
        style="width:95%; max-width:1200px; height:auto; display:inline-block; vertical-align:middle;">
 </p>
 
-<!-- 🌱 Grove Hackathon Demo Notice -->
-<p align="center" style="font-size:0.9em; color:#555;">
-  This section showcases charts and placeholders for the Grove Hackathon demo. 
-</p>
-
 <!-- 🌿 Tufte-style Tradeoff Chart -->
 <p align="center">
   <img src="assets/charts/tufte_tradeoff_chart.gif" 
@@ -19,17 +14,6 @@
 </p>
 <p align="center">
   <video src="assets/charts/tufte_tradeoff_chart.mp4" controls 
-         style="width:80%; max-width:850px; height:auto;"></video>
-</p>
-
-<!-- 🌟 Future Rothko-style / Sora Demo Placeholder -->
-<p align="center">
-  <img src="assets/charts/placeholder_rothko_demo.png" 
-       alt="Future Rothko-style Demo Placeholder" 
-       style="width:80%; max-width:850px; height:auto;">
-</p>
-<p align="center">
-  <video src="assets/charts/placeholder_rothko_demo.mp4" controls 
          style="width:80%; max-width:850px; height:auto;"></video>
 </p>
 
