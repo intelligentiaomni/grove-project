@@ -107,6 +107,14 @@
 
 ---
 
+#### Grove Project Lab Notebook
+
+| 🧮 **Jupyter NBViewer** | [Open in NBViewer](https://nbviewer.org/github/principia-lab/grove-prototype/blob/main/grove_lab_notebook.ipynb)                                                                        |
+| ☁️ **Google Colab**     | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/principia-lab/grove-prototype/blob/main/grove_lab_notebook.ipynb) |
+| 🧠 **Repository**       | [View on GitHub](https://github.com/principia-lab/grove-prototype/blob/main/grove_lab_notebook.ipynb)                                                                                   |
+
+---
+
 #### NEW! Hybrid Lab Holiday Fundraiser & Giveaway
 
 **[🎁 Click here to visit the Holiday Demo!](https://principia-lab.github.io/holiday-demo/)**
