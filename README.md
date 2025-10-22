@@ -102,7 +102,7 @@
 
 ## NEW! Hybrid Lab Holiday Fundraiser & Giveaway
 
-**[🎁 Click here to visit the Holiday Demo! ](https://principia-lab.github.io/holiday-demo/)**
+**[🎁 Click here to visit the Holiday Demo! 🎁](https://principia-lab.github.io/holiday-demo/)**
 
 ---
 
@@ -205,7 +205,14 @@ AI returns top candidate materials with reasoning and trade-off plots.
 
 ---
 
-# **Tracking Plan**
+## 📓 Logbook
+
+> Reflection: One thing realized while building this — **the correspondence layer, i.e. Sprint Logger for transmission, is itself a prototype.**  
+> It transmits insight, tests resonance, frames experiments, and attracts collaborators, also applicable outside lab.
+
+---
+
+## **🚋 Tracking Plan**
 
 Serves as a **single source of truth** for analytics, monitoring, and iteration, supporting:
 
@@ -213,11 +220,6 @@ Serves as a **single source of truth** for analytics, monitoring, and iteration,
 * User behavior analysis
 * Prototype and feature validation
 * Cross-concept insights for AI-enhanced features
-
-## 📓 Logbook
-
-> Reflection: One thing realized while building this — **the correspondence layer, i.e. Sprint Logger for transmission, is itself a prototype.**  
-> It transmits insight, tests resonance, frames experiments, and attracts collaborators, also applicable outside lab.
 
 ---
 
