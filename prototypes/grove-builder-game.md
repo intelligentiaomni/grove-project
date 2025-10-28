@@ -50,7 +50,6 @@ Theme: Grove forest integrated with real-world landmarks
 
 ---
 ```
-```
 🎙️ Choose Your Guide (Optional Prompt at Start)
 Upon entering the Hall of Origins, the player is prompted:
 “Would you like a companion to guide you through the origins of intelligence, technology, and discovery?”
