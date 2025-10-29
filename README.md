@@ -75,10 +75,10 @@
   <span style="flex-basis: 100%; height: 4px;"></span>
 
   <!-- JS/CSS/Python/Jupyter badges -->
-<a href="https://principia-lab.github.io/holiday-demo/">
+<a href="https://intelligentiaomni.github.io/holiday-demo/">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="20">
 </a>
-<a href="https://principia-lab.github.io/holiday-demo/">
+<a href="https://intelligentiaomni.github.io/holiday-demo/">
   <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" height="20">
 </a>
 <a href="assets/tufte_tradeoff_chart.mp4">
@@ -92,13 +92,13 @@
 
 
   <!-- Demo / Fundraiser badges -->
-  <a href="https://principia-lab.github.io/holiday-demo/">
+  <a href="https://intelligentiaomni.github.io/holiday-demo/">
     <img src="https://img.shields.io/badge/View-Demo-ff6f61?style=for-the-badge" alt="View Demo" height="20"/>
   </a>
-  <a href="https://principia-lab.github.io/holiday-demo/">
+  <a href="https://intelligentiaomni.github.io/holiday-demo/">
     <img src="https://img.shields.io/badge/Enter-Giveaway-ffd700?style=for-the-badge" alt="Enter Giveaway" height="20"/>
   </a>
-  <a href="https://principia-lab.github.io/holiday-demo/">
+  <a href="https://intelligentiaomni.github.io/holiday-demo/">
     <img src="https://img.shields.io/badge/Fundraiser-Info-1e90ff?style=for-the-badge" alt="Fundraiser Info" height="20"/>
   </a>
 
@@ -109,17 +109,17 @@
 
 #### Grove Project Lab Notebook
 
-[![Launch Lab](https://img.shields.io/badge/Launch%20Lab-🚀-green)](https://colab.research.google.com/github/principia-lab/grove-prototype/blob/main/notebooks/YourNotebook.ipynb)
+[![Launch Lab](https://img.shields.io/badge/Launch%20Lab-🚀-green)](https://colab.research.google.com/github/intelligentiaomni/grove-prototype/blob/main/notebooks/YourNotebook.ipynb)
 
-| 🧮 **Jupyter NBViewer** | [Open in NBViewer](https://nbviewer.org/github/principia-lab/grove-project/blob/main/grove_lab_notebook.ipynb)                                                                        |
-| ☁️ **Google Colab**     | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/principia-lab/grove-project/blob/main/grove_lab_notebook.ipynb) |
-| 🧠 **Repository**       | [View on GitHub](https://github.com/principia-lab/grove-project/blob/main/grove_lab_notebook.ipynb)                                                                                   |
+| 🧮 **Jupyter NBViewer** | [Open in NBViewer](https://nbviewer.org/github/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb)                                                                        |
+| ☁️ **Google Colab**     | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
+| 🧠 **Repository**       | [View on GitHub](https://github.com/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb)                                                                                   |
 
 ---
 
 #### NEW! Hybrid Lab Holiday Fundraiser & Giveaway
 
-**[🎁 Click here to visit the Holiday Demo!](https://principia-lab.github.io/holiday-demo/)**
+**[🎁 Click here to visit the Holiday Demo!](https://intelligentiaomni.github.io/holiday-demo/)**
 
 ---
 
@@ -257,7 +257,7 @@ This is early-stage and exploratory. Ideas, feedback, or collaboration → open 
 grove-project/
 ├─ README.md                         # Project overview (with badges + roadmap anchors)
 ├─ index.md                          # Homepage content
-├─ about.md                          # About Principia Lab & Grove vision
+├─ about.md                          # About IO Lab & Grove vision
 ├─ research.md                       # Research questions, context
 ├─ simulations.md                    # Interactive and AI foresight prototypes
 │
