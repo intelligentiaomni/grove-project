@@ -119,7 +119,10 @@
 
 #### NEW! Hybrid Lab Holiday Fundraiser & Giveaway
 
-**[🎁 Click here to visit the Holiday Demo!](https://intelligentiaomni.github.io/holiday-demo/)**
+**[🎁 Click here to visit the Holiday Demo!](https://intelligentiaomni.github.io/holiday-demo/)**  
+
+Support our ongoing AI-assisted lab experiments and builder game projects:  
+**[💖 Become a Patron](https://bit.ly/your_patreon_link)** — small contributions help fund experiments, creative research, and upcoming features.
 
 ---
 
