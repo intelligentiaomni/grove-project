@@ -119,10 +119,8 @@
 
 #### NEW! Hybrid Lab Holiday Fundraiser & Giveaway
 
-**[🎁 Click here to visit the Holiday Demo!](https://intelligentiaomni.github.io/holiday-demo/)**  
-
-Support our ongoing AI-assisted lab experiments and builder game projects:  
-**[💖 Become a Patron](https://bit.ly/your_patreon_link)** — small contributions help fund experiments, creative research, and upcoming features.
+**[🎁 Visit the Holiday Demo](https://intelligentiaomni.github.io/holiday-demo/)**  
+[![Become a Patron](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://patreon.com/intelligentiaomni)
 
 ---
 
@@ -252,6 +250,15 @@ Long-term development connects discovery modules to simulated economic and civil
 ## 🧱 Contributing
 
 This is early-stage and exploratory. Ideas, feedback, or collaboration → open an issue or PR.
+
+---
+
+### 🌐 Grove Project — Explore, Support, Listen
+
+[![Launch Project](https://img.shields.io/badge/🌱_Project-Visit-green?style=for-the-badge)](https://intelligentiaomni.github.io/grove-project)
+[![Research](https://img.shields.io/badge/💡_GitHub-View-blue?style=for-the-badge)](https://github.com/intelligentiaomni)
+[![Support on Patreon](https://img.shields.io/badge/🤝_Patreon-Support-f96854?logo=patreon&logoColor=white&style=for-the-badge)](https://patreon.com/intelligentiaomni)
+[![Soundtrack](https://img.shields.io/badge/🎧_Soundtrack-Listen-grey?style=for-the-badge)](https://bit.ly/433t1B6)
 
 ---
 
