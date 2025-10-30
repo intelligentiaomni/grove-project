@@ -119,7 +119,8 @@
 
 #### NEW! Hybrid Lab Holiday Fundraiser & Giveaway
 
-**[🎁 Visit the Holiday Demo](https://intelligentiaomni.github.io/holiday-demo/)**  
+**[🎁 Visit the Holiday Demo](https://intelligentiaomni.github.io/holiday-demo/)** 
+ 
 [![Become a Patron](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://patreon.com/intelligentiaomni)
 
 ---
