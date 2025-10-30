@@ -1,0 +1,157 @@
+<!-- Add this button above your form -->
+<button id="startTimer" class="btn" type="button">⏱️ Start Sprint Timer</button>
+
+<script>
+  const form = document.getElementById('sprintForm');
+  const output = document.getElementById('output');
+  const repeatBtn = document.getElementById('repeatLast');
+  const startTimerBtn = document.getElementById('startTimer');
+
+  // Default values
+  const defaultName = "JD"; 
+  const defaultDuration = 60; // minutes
+  const defaultModules = "Prompt Engine, Visualizer"; 
+  const defaultGoal = "Prototype key module or test a new idea"; 
+  const defaultSummary = "Quick sprint to iterate and validate the main feature or module."; 
+  const defaultReflections = "What worked well, what didn’t, and any blockers encountered."; 
+  const defaultNext = "Define the next critical step for the upcoming sprint."; 
+
+  const now = new Date();
+  const todayStr = now.toISOString().split('T')[0]; 
+  const timeStr = now.toTimeString().slice(0,5); 
+
+  function fillDefaults() {
+    document.getElementById('name').value = defaultName;
+    document.getElementById('date').value = todayStr;
+    document.getElementById('duration').value = defaultDuration;
+    document.getElementById('startTime').value = timeStr;
+    document.getElementById('modules').value = defaultModules;
+    document.getElementById('goal').value = defaultGoal;
+    document.getElementById('summary').value = defaultSummary;
+    document.getElementById('reflections').value = defaultReflections;
+    document.getElementById('next').value = defaultNext;
+  }
+
+  fillDefaults();
+
+  let timerInterval;
+  let startTime;
+
+  // Start sprint timer and auto-submit after duration
+  startTimerBtn.onclick = () => {
+    startTime = new Date();
+    startTimerBtn.disabled = true;
+    startTimerBtn.textContent = "⏱️ Sprint Running...";
+
+    timerInterval = setInterval(() => {
+      const now = new Date();
+      const elapsedMs = now - startTime;
+      const elapsedMin = Math.floor(elapsedMs / 60000);
+      document.getElementById('duration').value = elapsedMin + 1; // round up
+
+      // Auto-submit when elapsed reaches target duration
+      if (elapsedMin + 1 >= defaultDuration) {
+        clearInterval(timerInterval);
+        startTimerBtn.disabled = false;
+        startTimerBtn.textContent = "⏱️ Start Sprint Timer";
+        form.requestSubmit(); // auto-submit the form
+      }
+    }, 1000);
+  };
+
+  async function handleSubmit(e) {
+    if (e) e.preventDefault();
+    if (timerInterval) {
+      clearInterval(timerInterval);
+      startTimerBtn.disabled = false;
+      startTimerBtn.textContent = "⏱️ Start Sprint Timer";
+    }
+
+    const inputs = {
+      name: document.getElementById('name').value || defaultName,
+      date: document.getElementById('date').value,
+      duration: document.getElementById('duration').value,
+      goal: document.getElementById('goal').value || defaultGoal,
+      modules: document.getElementById('modules').value || defaultModules,
+      startTime: document.getElementById('startTime').value,
+      summary: document.getElementById('summary').value || defaultSummary,
+      reflections: document.getElementById('reflections').value || defaultReflections,
+      next: document.getElementById('next').value || defaultNext
+    };
+
+    // Store last session
+    localStorage.setItem('lastSession', JSON.stringify(inputs));
+
+    // Session versioning
+    const baseFilename = `sprint-${inputs.date}-${inputs.name.replace(/\s+/g, '-').toLowerCase()}`;
+    let version = parseInt(localStorage.getItem(baseFilename)) || 1;
+    const filename = `${baseFilename}-v${version}.md`;
+    localStorage.setItem(baseFilename, version + 1);
+
+    const prompt = `
+You're a sprint assistant. Format the following in markdown for a Grove async session log.
+
+- Name: ${inputs.name}
+- Date: ${inputs.date}
+- Duration: ${inputs.duration} minutes
+- Goal: ${inputs.goal}
+- Modules: ${inputs.modules}
+- Start Time: ${inputs.startTime}
+
+### TL;DR Summary
+${inputs.summary}
+
+### Reflections
+${inputs.reflections}
+
+### Next Steps (Next Critical Step)
+${inputs.next}
+
+Save as: ${filename}
+`;
+
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_API_KEY"
+      },
+      body: JSON.stringify({
+        model: "gpt-4",
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.5
+      })
+    });
+
+    const data = await response.json();
+    const markdown = data.choices?.[0]?.message?.content || "❌ No response";
+
+    output.textContent = markdown;
+
+    // Auto-save markdown as local file
+    const blob = new Blob([markdown], { type: "text/markdown" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+    link.click();
+  }
+
+  form.onsubmit = handleSubmit;
+
+  repeatBtn.onclick = () => {
+    const last = JSON.parse(localStorage.getItem('lastSession'));
+    if (last) {
+      document.getElementById('name').value = last.name;
+      document.getElementById('date').value = todayStr;
+      document.getElementById('duration').value = last.duration;
+      document.getElementById('startTime').value = timeStr;
+      document.getElementById('modules').value = last.modules;
+      document.getElementById('goal').value = last.next; 
+      document.getElementById('summary').value = last.summary;
+      document.getElementById('reflections').value = last.reflections;
+      document.getElementById('next').value = defaultNext;
+    } else {
+      fillDefaults();
+    }
+  };
+</script>
