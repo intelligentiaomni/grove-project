@@ -117,7 +117,7 @@
 
 ---
 
-### NEW! 🌱 Grove Physical Intelligence — 
+### NEW! 🌱 Grove Physical Intelligence 
 
 **Physical → Digital Twin → Cognitive → Community**
 
