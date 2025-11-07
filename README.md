@@ -117,6 +117,14 @@
 
 ---
 
+#### Hybrid Lab Holiday Fundraiser & Giveaway
+
+**[🎁 Visit the Holiday Demo](https://intelligentiaomni.github.io/holiday-demo/)** 
+ 
+[![Become a Patron](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://patreon.com/intelligentiaomni)
+
+---
+
 ### NEW! 🌱 Grove Physical Intelligence 
 
 **Physical → Digital Twin → Cognitive → Community**
@@ -127,14 +135,6 @@
 - 🌐 **Community Layer:** Builders co-create intelligent workflows together.
 
 > *A Grove Project lab experiment in embodied autonomy — exploring how physical intelligence can help early researchers move knowledge, materials, and prototypes with agency, confidence, and indexed creation.*
-
----
-
-#### Hybrid Lab Holiday Fundraiser & Giveaway
-
-**[🎁 Visit the Holiday Demo](https://intelligentiaomni.github.io/holiday-demo/)** 
- 
-[![Become a Patron](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://patreon.com/intelligentiaomni)
 
 ---
 
