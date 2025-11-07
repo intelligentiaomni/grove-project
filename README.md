@@ -107,6 +107,10 @@
 
 ---
 
+[🌐 **New! Physical Intelligence Preview**](./grove-ai-dev/experiments/physical-intelligence-preview.html)
+
+---
+
 #### Grove Project Lab Notebook
 
 [![Launch Lab](https://img.shields.io/badge/Launch%20Lab-🚀-green)](https://colab.research.google.com/github/intelligentiaomni/grove-prototype/blob/main/notebooks/YourNotebook.ipynb)
@@ -125,14 +129,14 @@
 
 ---
 
-### NEW! 🌱 Grove Physical Intelligence 
+### Grove Physical Intelligence 
 
 **Physical → Digital Twin → Cognitive → Community**
 
 - 🦾 **Physical Layer:** Robots move real-world materials and prototypes.  
 - 🧩 **Digital Twin:** Each object indexed and mirrored in Grove’s spatial map.  
 - 🧠 **Cognitive Layer:** AI coordinates motion, flow, and reasoning.  
-- 🌐 **Community Layer:** Builders co-create intelligent workflows together.
+- 🧱 **Community Layer:** Builders co-create intelligent workflows together.
 
 > *A Grove Project lab experiment in embodied autonomy — exploring how physical intelligence can help early researchers move knowledge, materials, and prototypes with agency, confidence, and indexed creation.*
 
