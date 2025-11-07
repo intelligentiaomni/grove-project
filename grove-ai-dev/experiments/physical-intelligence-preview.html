@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grove Physical Intelligence (Experiment)</title>
+  <style>
+    :root{
+      --bg:#fbfbfb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#2b6cb0; /* calm blue */
+      --accent-2:#9b5de5; /* soft purple */
+      --glass: rgba(255,255,255,0.6);
+      --maxw:1100px;
+      --radius:14px;
+      --pad:20px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#0f172a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg, #f7fbff 0%, var(--bg) 60%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:36px;
+      display:flex;
+      justify-content:center;
+      font-size:16px;
+      line-height:1.56;
+    }
+    .wrap{max-width:var(--maxw); width:100%;}
+    .hero{
+      background: linear-gradient(90deg, rgba(43,108,176,0.06), rgba(155,93,229,0.04));
+      border-radius:calc(var(--radius) + 6px);
+      padding:28px;
+      display:flex;
+      gap:20px;
+      align-items:center;
+      margin-bottom:22px;
+      box-shadow: 0 6px 20px rgba(10,20,40,0.06);
+      backdrop-filter: blur(6px);
+    }
+    .hero .title{
+      flex:1;
+    }
+    h1{
+      margin:0 0 8px 0;
+      font-size:22px;
+      letter-spacing:-0.2px;
+    }
+    p.lead{margin:0;color:var(--muted)}
+    .badge{font-weight:600;color:var(--accent); margin-bottom:6px; display:inline-block}
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 380px;
+      gap:20px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:var(--pad);
+      box-shadow: 0 6px 18px rgba(12,24,40,0.04);
+    }
+    .panel h3{margin-top:0}
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{padding:10px 8px;text-align:left;border-bottom:1px solid #f1f5f9;color:#111827;font-size:15px}
+    th{color:var(--muted);font-weight:600}
+    ul{margin:0;padding-left:18px}
+    .cta{
+      display:flex;
+      gap:10px;
+      margin-top:16px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      background:var(--accent);
+      color:white;
+      border:none;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:600;
+      cursor:pointer;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .btn.ghost{
+      background:transparent;
+      color:var(--accent);
+      border:1px solid rgba(43,108,176,0.12);
+    }
+    .aside{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .small{font-size:13px;color:var(--muted)}
+    .stack{
+      display:grid;
+      gap:10px;
+    }
+    .code{
+      background:linear-gradient(180deg, rgba(15,23,42,0.02), rgba(15,23,42,0.01));
+      padding:12px;border-radius:10px;font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;font-size:13px;color:#0f172a;
+    }
+    footer{margin-top:20px;color:var(--muted); font-size:13px;text-align:center}
+    @media (max-width:960px){
+      .grid{grid-template-columns:1fr; }
+      .hero{flex-direction:column; align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="title">
+        <div class="badge">Experiment #04</div>
+        <h1>A Grove Project Lab for Physical Intelligence</h1>
+        <p class="lead">Embodied AI for small labs — transforming space into indexed agency for atonomous builders.</p>
+      </div>
+      <div style="min-width:220px;text-align:right">
+        <div style="font-weight:700;color:var(--accent)">Smart Space</div>
+        <div class="small">A Builder’s Experiment</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card panel">
+        <h3>Purpose & Overview</h3>
+        <p>Explore how embodied intelligence helps early builders move knowledge, materials, and prototypes — from digital lab to physical, temporal storage or archive. Turn a storage unit into a prototype-friendly intelligence testbed.</p>
+
+        <h3 style="margin-top:18px">System Layers</h3>
+        <table aria-label="system-layers">
+          <thead><tr><th>Layer</th><th>What we test</th><th>Example tools</th></tr></thead>
+          <tbody>
+            <tr><td>Physical</td><td>Mobile robots / AMRs moving boxes</td><td>AWS RoboMaker / Spot SDK</td></tr>
+            <tr><td>Digital Twin</td><td>Index items via QR / sensors</td><td>AWS IoT TwinMaker</td></tr>
+            <tr><td>Cognitive</td><td>AI agent coordinates tasks</td><td>Grove Reasoning Engine + LLM</td></tr>
+            <tr><td>Community</td><td>Co-create behaviors & visualizations</td><td>Grove Builder Game</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:18px">Why it matters</h3>
+        <p>Small labs face physical entropy. This experiment turns logistics into a creative substrate — helping builders become autonomous and turning everyday infrastructure into a learning environment.</p>
+
+        <div class="cta">
+          <a class="btn" href="#" onclick="alert('Copy markdown or request PDF')">Request brief</a>
+          <a class="btn ghost" href="#" onclick="alert('Contact AWS Innovation Hub')">Partner outreach</a>
+        </div>
+
+        <h3 style="margin-top:18px">Expected outcomes</h3>
+        <ul>
+          <li>Functional digital twin of a Grove storage unit</li>
+          <li>Prototype Grove Index System (GIS)</li>
+          <li>Open demo + dataset for community learning</li>
+          <li>Integration plan for Tradeoff Visualizer & Builder Game</li>
+        </ul>
+      </div>
+
+      <aside class="aside">
+        <div class="card">
+          <strong>Technical stack (sponsor-aligned)</strong>
+          <div class="small" style="margin-top:8px">AWS RoboMaker · AWS IoT Core & TwinMaker · Amazon Bedrock / SageMaker · Unity / WebGL · ROS2</div>
+        </div>
+
+        <div class="card">
+          <strong>Activation path</strong>
+          <ul style="margin-top:8px">
+            <li>AWS Activate for Startups (credits)</li>
+            <li>AWS Sweden Innovation Hub (local pilots)</li>
+            <li>In-kind compute/hardware for embodied builders</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>Quick demo idea</strong>
+          <div class="code">
+            Storage Indexed: 100%<br>
+            Path Efficiency: +38%<br>
+            Human Load Reduced: -60%
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Grove Project experiments / physical-intelligence · Prototype-ready brief · © 2025 IO Lab
+    </footer>
+  </div>
+</body>
+</html>
