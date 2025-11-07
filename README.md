@@ -136,6 +136,10 @@
 
 > *A Grove Project lab experiment in embodied autonomy — exploring how physical intelligence can help early researchers move knowledge, materials, and prototypes with agency, confidence, and indexed creation.*
 
+![Grove Physical Intelligence Poster](./research/phys-intelligence-poster.png)
+![Grove Physical Intelligence Abstract](./research/physical-intelligence-abstract.md)
+![Physical Intelligence Technical](./grove-ai-dev/experiments/physical-intelligence.md)
+
 ---
 
 # 🌲 Grove Project
