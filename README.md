@@ -117,7 +117,20 @@
 
 ---
 
-#### NEW! Hybrid Lab Holiday Fundraiser & Giveaway
+### NEW! 🌱 Grove Physical Intelligence — 
+
+**Physical → Digital Twin → Cognitive → Community**
+
+- 🦾 **Physical Layer:** Robots move real-world materials and prototypes.  
+- 🧩 **Digital Twin:** Each object indexed and mirrored in Grove’s spatial map.  
+- 🧠 **Cognitive Layer:** AI coordinates motion, flow, and reasoning.  
+- 🌐 **Community Layer:** Builders co-create intelligent workflows together.
+
+> *A Grove Project lab experiment in embodied autonomy — exploring how physical intelligence can help early researchers move knowledge, materials, and prototypes with agency, confidence, and indexed creation.*
+
+---
+
+#### Hybrid Lab Holiday Fundraiser & Giveaway
 
 **[🎁 Visit the Holiday Demo](https://intelligentiaomni.github.io/holiday-demo/)** 
  
