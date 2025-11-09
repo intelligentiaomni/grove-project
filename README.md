@@ -121,9 +121,9 @@
 
 ---
 
-#### Hybrid Lab Holiday Fundraiser & Giveaway
+#### Hybrid Lab + Physical Intelligence
 
-**[🎁 Visit the Holiday Demo](https://intelligentiaomni.github.io/holiday-demo/)** 
+**[🎁 Interactive Holiday Demo](https://intelligentiaomni.github.io/holiday-demo/)** 
  
 [![Become a Patron](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://patreon.com/intelligentiaomni)
 
