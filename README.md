@@ -107,7 +107,7 @@
 
 ---
 
-[🌐 **New! Physical Intelligence Preview**](./grove-ai-dev/experiments/physical-intelligence-preview.html)
+[🌐 **New! Physical Intelligence Preview**](https://intelligentiaomni.github.io/grove-project/grove-ai-dev/experiments/physical-intelligence-preview.html)
 
 ---
 
