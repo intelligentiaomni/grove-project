@@ -51,7 +51,7 @@
     <img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=for-the-badge&logoColor=white" alt="Grove AI" height="22"/>
   </a>
   <a href="https://intelligentiaomni.github.io/grove-project/grove-ai-dev/experiments/physical-intelligence-preview.html">
-  <img src="https://img.shields.io/badge/Physical%20Intelligence-Autonomy%20Agency%20to%20Trust.-5C8DFF?style=for-the-badge&logoColor=white" alt="Physical Intelligence Demo" height="22"/>
+  <img src="https://img.shields.io/badge/Physical%20Intelligence-Autonomy%20Agency%20Trust-5C8DFF?style=for-the-badge&logoColor=white" alt="Physical Intelligence Demo" height="22"/>
 </a>
   <a href="./">
     <img src="https://img.shields.io/badge/Multi--Agent-enabled-orange?style=for-the-badge&logoColor=white" alt="Multi-Agent" height="22"/>
