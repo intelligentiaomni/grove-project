@@ -1,4 +1,8 @@
-<!-- 🌲 Grove Project Header: Banners + Badges -->
+<!-- 🌲 Grove Project Modular Ecosystem Layout -->
+
+---
+
+#### Identity Layer — Visual & Conceptual Entry
 
 <p align="center">
   <img src="assets/banners/banner.svg" 
@@ -6,7 +10,6 @@
        style="width:95%; max-width:1200px; height:auto; display:inline-block; vertical-align:middle;">
 </p>
 
-<!-- 🌿 Tufte-style Tradeoff Chart -->
 <p align="center">
   <img src="assets/tufte_tradeoff_chart.gif" 
        alt="Top Materials — Tufte-style Tradeoff Chart" 
@@ -17,7 +20,6 @@
          style="width:80%; max-width:850px; height:auto;"></video>
 </p>
 
-<!-- 🌟 Future Rothko-style / Sora Demo Placeholder -->
 <p align="center">
   <img src="assets/placeholder_rothko_demo.png" 
        alt="Future Rothko-style Demo Placeholder" 
@@ -28,121 +30,145 @@
          style="width:80%; max-width:850px; height:auto;"></video>
 </p>
 
-<br><br>
+---
 
-<!-- 🏷️ Grove Project Badges - Color Coordinated & Responsive -->
+#### Ontology Layer — Badges as Conceptual Modules
+
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 5px;">
 
-  <!-- Core project badges -->
-  <a href="./">
-    <img src="https://img.shields.io/badge/status-Prototype-yellowgreen?style=for-the-badge&logoColor=white" alt="Status: Prototype" height="22"/>
-  </a>
-  <a href="./">
-    <img src="https://img.shields.io/badge/version-0.1.0--alpha-blueviolet?style=for-the-badge&logoColor=white" alt="Version 0.1.0-alpha" height="22"/>
-  </a>
-  <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge&logoColor=white" alt="License: MIT" height="22"/>
-  </a>
+  <!-- Core Metadata -->
+  <a href="./"><img src="https://img.shields.io/badge/status-Prototype-yellowgreen?style=for-the-badge&logoColor=white" alt="Status: Prototype" height="22"/></a>
+  <a href="./"><img src="https://img.shields.io/badge/version-0.1.0--alpha-blueviolet?style=for-the-badge&logoColor=white" alt="Version 0.1.0-alpha" height="22"/></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge&logoColor=white" alt="License: MIT" height="22"/></a>
 
   <span style="flex-basis: 100%; height: 4px;"></span>
 
-  <!-- AI-related badges -->
-  <a href="./">
-    <img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=for-the-badge&logoColor=white" alt="Grove AI" height="22"/>
-  </a>
+  <!-- AI & Intelligence -->
+  <a href="./"><img src="https://img.shields.io/badge/AI-Grove-brightgreen?style=for-the-badge&logoColor=white" alt="Grove AI" height="22"/></a>
   <a href="https://intelligentiaomni.github.io/grove-project/grove-ai-dev/experiments/physical-intelligence-preview.html">
-  <img src="https://img.shields.io/badge/Physical%20Intelligence-Autonomy%20Agency%20Trust-5C8DFF?style=for-the-badge&logoColor=white" alt="Physical Intelligence Demo" height="22"/>
-</a>
-  <a href="./">
-    <img src="https://img.shields.io/badge/Multi--Agent-enabled-orange?style=for-the-badge&logoColor=white" alt="Multi-Agent" height="22"/>
+    <img src="https://img.shields.io/badge/Physical%20Intelligence-Autonomy%20Agency%20Trust-5C8DFF?style=for-the-badge&logoColor=white" alt="Physical Intelligence Demo" height="22"/>
   </a>
+  <a href="./"><img src="https://img.shields.io/badge/Multi--Agent-enabled-orange?style=for-the-badge&logoColor=white" alt="Multi-Agent" height="22"/></a>
 
   <span style="flex-basis: 100%; height: 4px;"></span>
 
-  <!-- Phase & Guardrails badges -->
-  <a href="./">
-    <img src="https://img.shields.io/badge/Phase-Research-blue?style=for-the-badge&logoColor=white" alt="Research Phase" height="22"/>
-  </a>
-  <a href="./">
-    <img src="https://img.shields.io/badge/Guardrails-passed-brightgreen?style=for-the-badge&logoColor=white" alt="Guardrails" height="22"/>
-  </a>
-
-  <!-- Optional Lab Verified badge -->
-  <a href="./verification.md">
-    <img src="https://img.shields.io/badge/Lab-Verified-brightgreen?style=for-the-badge&logoColor=white" alt="Lab Verified" height="22"/>
-  </a>
+  <!-- Phase & Guardrails -->
+  <a href="./"><img src="https://img.shields.io/badge/Phase-Research-blue?style=for-the-badge&logoColor=white" alt="Research Phase" height="22"/></a>
+  <a href="./"><img src="https://img.shields.io/badge/Guardrails-passed-brightgreen?style=for-the-badge&logoColor=white" alt="Guardrails" height="22"/></a>
+  <a href="./verification.md"><img src="https://img.shields.io/badge/Lab-Verified-brightgreen?style=for-the-badge&logoColor=white" alt="Lab Verified" height="22"/></a>
 
   <span style="flex-basis: 100%; height: 4px;"></span>
 
-  <!-- JS/CSS/Python/Jupyter badges -->
-<a href="https://intelligentiaomni.github.io/holiday-demo/">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="20">
-</a>
-<a href="https://intelligentiaomni.github.io/holiday-demo/">
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" height="20">
-</a>
-<a href="assets/tufte_tradeoff_chart.mp4">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Tufte Chart" height="20">
-</a>
-<a href="assets/tufte_tradeoff_chart.mp4">
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Tufte Chart" height="20">
-</a>
+  <!-- Tech Stack -->
+  <a href="https://intelligentiaomni.github.io/holiday-demo/"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="20"></a>
+  <a href="https://intelligentiaomni.github.io/holiday-demo/"><img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" height="20"></a>
+  <a href="assets/tufte_tradeoff_chart.mp4"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Tufte Chart" height="20"></a>
+  <a href="assets/tufte_tradeoff_chart.mp4"><img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Tufte Chart" height="20"></a>
 
-<span style="flex-basis: 100%; height: 4px;"></span>
+  <span style="flex-basis: 100%; height: 4px;"></span>
 
-
-  <!-- Demo / Fundraiser badges -->
-  <a href="https://intelligentiaomni.github.io/holiday-demo/">
-    <img src="https://img.shields.io/badge/View-Demo-ff6f61?style=for-the-badge" alt="View Demo" height="20"/>
-  </a>
-  <a href="https://intelligentiaomni.github.io/holiday-demo/">
-    <img src="https://img.shields.io/badge/Enter-Giveaway-ffd700?style=for-the-badge" alt="Enter Giveaway" height="20"/>
-  </a>
-  <a href="https://intelligentiaomni.github.io/holiday-demo/">
-    <img src="https://img.shields.io/badge/Fundraiser-Info-1e90ff?style=for-the-badge" alt="Fundraiser Info" height="20"/>
-  </a>
-
+  <!-- Outreach & Engagement -->
+  <a href="https://intelligentiaomni.github.io/holiday-demo/"><img src="https://img.shields.io/badge/View-Demo-ff6f61?style=for-the-badge" alt="View Demo" height="20"/></a>
+  <a href="https://intelligentiaomni.github.io/holiday-demo/"><img src="https://img.shields.io/badge/Enter-Giveaway-ffd700?style=for-the-badge" alt="Enter Giveaway" height="20"/></a>
+  <a href="https://intelligentiaomni.github.io/holiday-demo/"><img src="https://img.shields.io/badge/Fundraiser-Info-1e90ff?style=for-the-badge" alt="Fundraiser Info" height="20"/></a>
 </div>
-<br>
 
 ---
 
-[🌐 **New! Physical Intelligence Preview**](https://intelligentiaomni.github.io/grove-project/grove-ai-dev/experiments/physical-intelligence-preview.html)
+#### Cognition Layer — Hybrid Lab + Physical Intelligence
 
----
+> *A Grove Project experiment in embodied autonomy — exploring how physical intelligence can help early researchers move knowledge, materials, and prototypes with agency, independence, and indexed creation.*
 
-#### Grove Project Lab Notebook
-
-[![Launch Lab](https://img.shields.io/badge/Launch%20Lab-🚀-green)](https://colab.research.google.com/github/intelligentiaomni/grove-prototype/blob/main/notebooks/YourNotebook.ipynb)
-
-| 🧮 **Jupyter NBViewer** | [Open in NBViewer](https://nbviewer.org/github/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb)                                                                        |
-| ☁️ **Google Colab**     | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
-| 🧠 **Repository**       | [View on GitHub](https://github.com/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb)                                                                                   |
-
----
-
-#### Hybrid Lab + Physical Intelligence
-
-**[🎁 Interactive Holiday Demo](https://intelligentiaomni.github.io/holiday-demo/)** 
- 
-[![Become a Patron](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://patreon.com/intelligentiaomni)
-
----
-
-### Grove Physical Intelligence 
+| Layer | Symbol | Description |
+|:------|:--------|:------------|
+| 🦾 **Physical** | Robots / sensors | Grounded real-world actions |
+| 🧩 **Digital Twin** | Indexed maps | Structured representations |
+| 🧠 **Cognitive** | AI reasoning | Decision & adaptation |
+| 🧱 **Community** | Builders | Co-creation & evolution |
 
 **Physical → Digital Twin → Cognitive → Community**
-
-- 🦾 **Physical Layer:** Robots move real-world materials and prototypes.  
-- 🧩 **Digital Twin:** Each object indexed and mirrored in Grove’s spatial map.  
-- 🧠 **Cognitive Layer:** AI coordinates motion, flow, and reasoning.  
-- 🧱 **Community Layer:** Builders co-create intelligent workflows together.
-
-> *A Grove Project lab experiment in embodied autonomy — exploring how physical intelligence can help early researchers move knowledge, materials, and prototypes with agency, confidence, and indexed creation.*
 
 [![Abstract](https://img.shields.io/badge/📘%20Abstract-Research-blue?style=for-the-badge)](./research/physical-intelligence-abstract.md)
 [![Technical Notes](https://img.shields.io/badge/🧠%20Technical_AI--Dev-lightgrey?style=for-the-badge)](./grove-ai-dev/experiments/physical-intelligence.md)
 [![Poster](https://img.shields.io/badge/🎨%20Poster-Visuals-green?style=for-the-badge)](./research/phys_intelligence_poster.png)
+
+---
+
+#### Experiment Layer — Open Lab Integration
+
+| 🧮 **Jupyter NBViewer** | [Open in NBViewer](https://nbviewer.org/github/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
+| ☁️ **Google Colab** | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
+| 🧠 **Repository** | [View on GitHub](https://github.com/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
+
+[![Launch Lab](https://img.shields.io/badge/Launch%20Lab-🚀-green)](https://colab.research.google.com/github/intelligentiaomni/grove-prototype/blob/main/notebooks/YourNotebook.ipynb)
+
+---
+
+#### Outreach Layer — Community & Support
+
+| **Interactive Holiday Demo + Phys. Intelligence** | [View on GitHub](https://intelligentiaomni.github.io/holiday-demo/) | |
+[![Become a Patron](https://img.shields.io/badge/Support%20on-Patreon-orange?logo=patreon)](https://patreon.com/intelligentiaomni) |
+
+---
+
+#### Philosophy Layer — Symbolic Resonance
+
+> *From prototype to principle. From cognition to creation.*  
+> *Every badge a portal, every builder a co-discoverer.*
+
+---
+
+```
+================================================================================
+                     GROVE ECOSYSTEM MAP — 2D ASCII
+================================================================================
+
+Horizontal axis = Process Flow (Data → Tools → Actions → Modules)
+Vertical axis = Bloom’s Taxonomy (top = higher-order thinking)
+
+                                   ┌────────────────────────────────────────────┐
+                                   │        PROCESS FLOW → (left → right)       │
+                                   └────────────────────────────────────────────┘
+
+  FLOW / BLOOM    |   DATA / INPUT    |     TOOLS / TACTICS     |    ACTIONS     |   MODULES 
+-----------------------------------------------------------------------------------------------
+ CREATING       |  aggregated intel |  robotics, CAD, sim     | design, invent    | Physical Intelligence
+ (synthesize)   |  digital twin     |  control stacks, IDEs   | integrate, build  | System Builder
+-----------------------------------------------------------------------------------------------
+ EVALUATING     |  metrics, results |  benchmarks, sim tools  | test, compare     | Tradeoff Visualizer
+ (judge)        |  A/B outcomes     |  validation suites      | optimize, select  | Benchmark Analyst
+-----------------------------------------------------------------------------------------------
+ ANALYZING      |  features, models |  ML, pandas, stats tools| analyze, detect   | Data Analyzer
+ (deconstruct)  |  cross-tabs       |  visualization libraries| cluster, model    | Structure Mapper
+-----------------------------------------------------------------------------------------------
+ APPLYING       |  curated data     |  scripts, notebooks     | run experiments   | Prototype Operator
+ (execute)      |  small datasets   |  pipelines, consoles    | implement, deploy | Experiment Runner
+-----------------------------------------------------------------------------------------------
+ UNDERSTANDING  |  parsed records   |  dashboards, queries    | interpret, explain| Insight Translator
+ (explain)      |  summary stats    |  filtering, charts      | summarize, map    | Signal Decoder
+-----------------------------------------------------------------------------------------------
+ REMEMBERING    |  raw data, logs   |  catalog, search tools  | identify, label   | Knowledge Seed
+ (recall)       |  photos, receipts |  lookups, archives      | store, retrieve   | Data Archive
+-----------------------------------------------------------------------------------------------
+
+                                  ↖────────────────────────────────────↗
+                                   Feedback loops (iterative cycles):
+            Creation → Debugging → Troubleshooting → Evaluation → Refinement → Creation
+                                  ↙────────────────────────────────────↘
+
+ Cross-layer examples:
+  • Data Analyzer → Tradeoff Visualizer → Physical Intelligence
+  • Prototype Operator → Insight Translator → Knowledge Seed
+  • Knowledge Seed → regenerated as input for next Creation cycle
+
+ Legend:
+  • DATA / INPUT   = what you start with (measurements, logs)
+  • TACTICS / TOOLS  = libraries, infra, simulations, hardware
+  • ACTIONS = builder actions
+  • MODULES = modules / badges / deliverables
+
+================================================================================
+```
 
 ---
 
