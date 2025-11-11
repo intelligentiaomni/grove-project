@@ -116,12 +116,14 @@
 > *From prototype to principle. From cognition to creation.*  
 > *Every badge a portal, every builder a co-discoverer.*
 
+
 ---
 
+
 ```
-================================================================================
+===============================================================================================
                      GROVE ECOSYSTEM MAP — 2D ASCII
-================================================================================
+===============================================================================================
 
 Horizontal axis = Process Flow (Data → Tools → Actions → Modules)
 Vertical axis = Bloom’s Taxonomy (top = higher-order thinking)
@@ -130,9 +132,9 @@ Vertical axis = Bloom’s Taxonomy (top = higher-order thinking)
                                    │        PROCESS FLOW → (left → right)       │
                                    └────────────────────────────────────────────┘
 
-  FLOW / BLOOM    |   DATA / INPUT    |     TOOLS / TACTICS     |    ACTIONS     |   MODULES 
+ FLOW / BLOOM   |   DATA / INPUT    |     TOOLS / TACTICS     |    ACTIONS        |   MODULES 
 -----------------------------------------------------------------------------------------------
- CREATING       |  aggregated intel |  robotics, CAD, sim     | design, invent    | Physical Intelligence
+ CREATING       |  aggregated intel |  robotics, CAD, sim     | design, invent    | Phys. Intelligence
  (synthesize)   |  digital twin     |  control stacks, IDEs   | integrate, build  | System Builder
 -----------------------------------------------------------------------------------------------
  EVALUATING     |  metrics, results |  benchmarks, sim tools  | test, compare     | Tradeoff Visualizer
@@ -162,13 +164,14 @@ Vertical axis = Bloom’s Taxonomy (top = higher-order thinking)
   • Knowledge Seed → regenerated as input for next Creation cycle
 
  Legend:
-  • DATA / INPUT   = what you start with (measurements, logs)
-  • TACTICS / TOOLS  = libraries, infra, simulations, hardware
+  • DATA / INPUT = what you start with (measurements, logs)
+  • TOOLS / TACTICS = libraries, infra, simulations, hardware
   • ACTIONS = builder actions
   • MODULES = modules / badges / deliverables
 
-================================================================================
+===============================================================================================
 ```
+
 
 ---
 
