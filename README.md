@@ -96,9 +96,9 @@
 
 #### Experiment Layer — Open Lab Integration
 
-| 🧮 **Jupyter NBViewer** | [Open in NBViewer](https://nbviewer.org/github/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
+| **Jupyter NBViewer** | [Open in NBViewer](https://nbviewer.org/github/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
 | ☁️ **Google Colab** | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
-| 🧠 **Repository** | [View on GitHub](https://github.com/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
+| **Repository** | [View on GitHub](https://github.com/intelligentiaomni/grove-project/blob/main/grove_lab_notebook.ipynb) |
 
 [![Launch Lab](https://img.shields.io/badge/Launch%20Lab-🚀-green)](https://colab.research.google.com/github/intelligentiaomni/grove-prototype/blob/main/notebooks/YourNotebook.ipynb)
 
