@@ -199,7 +199,7 @@ The **Grove Project** unifies AI module to leverage scientific discovery.
 
 ## ⚙ Core Components
 
-- **Grove AI Dev** orchestration layer integrating GPT, Codex, DALL-E, Sora, Guardrails, and observability tools.  
+- **Grove AI Dev** intelligence orchestration layer.
 - **Grove Sprint Logger v2** correspondence system for async sprint workflows, AI-enhanced logbook stored as structured markdown for easy versioning, async review, and integration with discovery engines.
 - **Grove “Learn & Level-up” Builder Game** open-world simulation bridging coding, problem-solving, and research-based gameplay.  
 - **Trade-off Visualizer** Tufte-style reasoning dashboard.  
