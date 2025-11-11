@@ -164,7 +164,7 @@ Vertical axis = Bloom’s Taxonomy (top = higher-order thinking)
   • Knowledge Seed → regenerated as input for next Creation cycle
 
  Legend:
-  • DATA / INPUT = what you start with (measurements, logs)
+  • DATA / INPUT = what the lab team starts with (measurements, logs)
   • TOOLS / TACTICS = libraries, infra, simulations, hardware
   • ACTIONS = builder actions
   • MODULES = modules / badges / deliverables
